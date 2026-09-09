@@ -1,0 +1,255 @@
+[
+  {
+    "id": "cml/h-2o",
+    "input": "H_2O",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/14c",
+    "input": "^14C",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/ca-2",
+    "input": "Ca^2+",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/2h-2-o-2-2h-2o",
+    "input": "2H_2 + O_2 -> 2H_2O",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/ch-3-ch-2-oh",
+    "input": "CH_3-CH_2-OH",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/h-o-h",
+    "input": "H-O-H",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/fe-ii",
+    "input": "Fe^(II)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/o",
+    "input": "::O",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/n",
+    "input": "N.",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/n-",
+    "input": "::N.",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/1s-2-2s-2",
+    "input": "1s^2 2s^2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/1s-2-2s-2-2p-6-3d-10-4s-2",
+    "input": "1s^2 2s^2 2p^6 3d^10 4s^2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/k-c-p-r-",
+    "input": "`K_c = [P]/[R]`",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/note-toxic-",
+    "input": "\"note: toxic\"",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/oh-2",
+    "input": "(OH)_2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/h-2o-3",
+    "input": "(H_2O)_3",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/ca-oh-2",
+    "input": "Ca(OH)_2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/oh-2-2",
+    "input": "[OH]_2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/oh-2-3",
+    "input": "{OH}_2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/oh-",
+    "input": "((OH))",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/oh-2-",
+    "input": "((OH)_2)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/ca-oh-2-2",
+    "input": "Ca((OH)_2)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "cml/a-b-c-d-",
+    "input": "`a < b && c > d`",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip"
+    ],
+    "since": "0.1.0"
+  }
+]
