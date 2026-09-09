@@ -1,0 +1,50 @@
+[
+  {
+    "id": "lint/unbalanced-reaction",
+    "input": "H_2 + O_2 -> H_2O",
+    "parses": true,
+    "lint": [{ "severity": "error", "messageIncludes": "not balanced" }],
+    "tags": ["lint", "balance"],
+    "since": "0.2.0"
+  },
+  {
+    "id": "lint/isotope-below-atomic-number",
+    "input": "^5C",
+    "parses": true,
+    "lint": [{ "severity": "error", "messageIncludes": "Isotope mass 5" }],
+    "tags": ["lint", "isotope"],
+    "since": "0.2.0"
+  },
+  {
+    "id": "lint/unknown-element-warning",
+    "input": "Hx_2O",
+    "parses": true,
+    "lint": [{ "severity": "warning", "messageIncludes": "Unknown element" }],
+    "tags": ["lint", "element"],
+    "since": "0.2.0"
+  },
+  {
+    "id": "lint/identifier-bad-cas-check-digit",
+    "input": "C @cas(\"74-82-9\")",
+    "parses": true,
+    "lint": [{ "severity": "error", "messageIncludes": "check digit 9" }],
+    "tags": ["lint", "identifier"],
+    "since": "0.2.0"
+  },
+  {
+    "id": "lint/inchi-molecule-mismatch",
+    "input": "H_2O @inchi(\"InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)\")",
+    "parses": true,
+    "lint": [{ "severity": "error", "messageIncludes": "does not match molecule" }],
+    "tags": ["lint", "identifier", "consistency"],
+    "since": "0.2.0"
+  },
+  {
+    "id": "lint/clean-water-no-diagnostics",
+    "input": "H_2O",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "clean"],
+    "since": "0.2.0"
+  }
+]

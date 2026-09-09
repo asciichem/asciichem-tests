@@ -1,0 +1,1415 @@
+[
+  {
+    "id": "fuzz/01-atoms-1",
+    "input": "H",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/01-atoms-2",
+    "input": "He",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/01-atoms-3",
+    "input": "Uue",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-1",
+    "input": "H_2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-2",
+    "input": "H_2O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-3",
+    "input": "H_2SO_4",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-4",
+    "input": "C_6H_12O_6",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-5",
+    "input": "Ca(OH)_2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-6",
+    "input": "(NH_4)_2SO_4",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-7",
+    "input": "[Fe(CN)_6]^4-",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/02-subscripts-groups-8",
+    "input": "{CH_3}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-1",
+    "input": "^14C",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-2",
+    "input": "^131I",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-3",
+    "input": "^238U",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-4",
+    "input": "_6Li",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-5",
+    "input": "H^+",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-6",
+    "input": "Ca^2+",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-7",
+    "input": "SO_4^2-",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-8",
+    "input": "Fe^(II)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-9",
+    "input": "Fe^(III)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/03-isotopes-charges-10",
+    "input": "Mn^(VII)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/04-coefficients-1",
+    "input": "2H_2O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/04-coefficients-2",
+    "input": "3H_2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/04-coefficients-3",
+    "input": "10CO_2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/05-bonds-1",
+    "input": "H-O-H",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/05-bonds-2",
+    "input": "H_2C=CH_2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/05-bonds-3",
+    "input": "HC#CH",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/05-bonds-4",
+    "input": "H-O-H=O#H",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-1",
+    "input": "A -> B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-2",
+    "input": "A <- B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-3",
+    "input": "A <=> B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-4",
+    "input": "A <-> B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-5",
+    "input": "2H_2 + O_2 -> 2H_2O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-6",
+    "input": "N_2 + 3H_2 <=>[Fe][400°C] 2NH_3",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-7",
+    "input": "HCl + NaOH -> NaCl + H_2O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/06-reactions-8",
+    "input": "CH_4 + 2O_2 -> CO_2 + 2H_2O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/07-cascades-1",
+    "input": "A -> B -> C",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/07-cascades-2",
+    "input": "A -> B -> C -> D",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/07-cascades-3",
+    "input": "2A -> 2B -> 2C",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/07-cascades-4",
+    "input": "A <=>[Fe][T] B -> C",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/07-cascades-5",
+    "input": "A -> B <=>[H_2O] C -> D",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/08-electron-config-1",
+    "input": "1s^2 2s^2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/08-electron-config-2",
+    "input": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/08-electron-config-3",
+    "input": "4f^14 5d^10 6s^2",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/09-embedded-math-1",
+    "input": "`K_c = [P]/[R]`",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/09-embedded-math-2",
+    "input": "`x^2 + y^2`",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/09-embedded-math-3",
+    "input": "`rate = k[A]^2[B]`",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/10-deep-nesting-1",
+    "input": "((((((((((H))))))))))",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/10-deep-nesting-2",
+    "input": "(((((((((OH))))))))_2)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/10-deep-nesting-3",
+    "input": "A(B(C(D(E(F(G)))))))",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/11-mixed-brackets-1",
+    "input": "([{}])",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/11-mixed-brackets-2",
+    "input": "[(])]",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/11-mixed-brackets-3",
+    "input": "{[()]}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/11-mixed-brackets-4",
+    "input": "(((script)))",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/12-braced-values-1",
+    "input": "H_{2a}O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/12-braced-values-2",
+    "input": "H_{2}O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/12-braced-values-3",
+    "input": "H_{this is long}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/12-braced-values-4",
+    "input": "Ca^{2+}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/12-braced-values-5",
+    "input": "Fe^{(III)}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/13-conditions-1",
+    "input": "A <=>[][] B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/13-conditions-2",
+    "input": "A <=>[only-above] B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/13-conditions-3",
+    "input": "A <=>[][only-below] B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/13-conditions-4",
+    "input": "A -> B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/13-conditions-5",
+    "input": "A ->[catalyst] B",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-1",
+    "input": "H2O",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-2",
+    "input": "H_{}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-3",
+    "input": "^",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-4",
+    "input": "^",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-5",
+    "input": "_",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-6",
+    "input": "__",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-7",
+    "input": "^^^A",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/14-malformed-markers-8",
+    "input": "_A",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/15-text-with-symbols-1",
+    "input": "#!/bin/bash",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/15-text-with-symbols-2",
+    "input": "H_2O \"@ room temperature\"",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/15-text-with-symbols-3",
+    "input": "\"mix thoroughly\"",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/15-text-with-symbols-4",
+    "input": "\"note: toxic\"",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/15-text-with-symbols-5",
+    "input": "\"sodium ion Na+ in solution\"",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/15-text-with-symbols-6",
+    "input": "\"a < b && c > d\"",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-1",
+    "input": "crystal[NaCl]",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-2",
+    "input": "crystal[NaCl]()",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-3",
+    "input": "crystal[NaCl](a=5.64)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-4",
+    "input": "crystal[NaCl](a=5.64,b=5.64,c=5.64)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-5",
+    "input": "crystal[NaCl](a=5.64,b=5.64,c=5.64,alpha=90,beta=90,gamma=90)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-6",
+    "input": "crystal[NaCl](a=5.64,sg=Fm-3m)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-7",
+    "input": "crystal[NaCl](a=5.64,sg=Fm-3m){}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-8",
+    "input": "crystal[NaCl](a=5.64,sg=Fm-3m){Na@f(0,0,0)}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-9",
+    "input": "crystal[NaCl](a=5.64,sg=Fm-3m){Na@f(0,0,0) Cl@f(0.5,0.5,0.5)}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-10",
+    "input": "crystal(x)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-11",
+    "input": "crystal[](a=1)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-12",
+    "input": "crystal(a=1,b=2,c=3)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/16-crystal-13",
+    "input": "crystal[](sg=P21/c)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-1",
+    "input": "spectrum",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-2",
+    "input": "spectrum[nmr]",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-3",
+    "input": "spectrum[nmr]()",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-4",
+    "input": "spectrum[nmr](type=1H)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-5",
+    "input": "spectrum[nmr](type=1H,solvent=CDCl3)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-6",
+    "input": "spectrum[nmr](type=1H,solvent=CDCl3){}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-7",
+    "input": "spectrum[nmr](type=1H,solvent=CDCl3){1.2: 3H}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-8",
+    "input": "spectrum[nmr](type=1H,solvent=CDCl3){1.2: 3H s}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-9",
+    "input": "spectrum[nmr](type=1H,solvent=CDCl3){1.2: 3H s \"CH3\"}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-10",
+    "input": "spectrum[ir]",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-11",
+    "input": "spectrum[ir]{3300: 100 \"O-H\"}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-12",
+    "input": "spectrum[ms]",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-13",
+    "input": "spectrum[ms]{18: 100% \"M+\"}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/17-spectrum-14",
+    "input": "spectrum[uv]{260: 12000 \"n->pi*\"}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-1",
+    "input": "calc",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-2",
+    "input": "calc(b3lyp)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-3",
+    "input": "calc(b3lyp/6-31G*)",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-4",
+    "input": "calc(b3lyp/6-31G*){}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-5",
+    "input": "calc(b3lyp/6-31G*){energy: -234.5}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-6",
+    "input": "calc(b3lyp/6-31G*){energy: -234.5 Hartree}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-7",
+    "input": "calc(b3lyp/6-31G*){energy: -234.5 dipole: [0.1, 0.2, 0.3]}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-8",
+    "input": "calc(hf/sto-3g){energy: -76.0 Hartree}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-9",
+    "input": "calc(mp2/cc-pVTZ){energy: -76.4}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-10",
+    "input": "calc(){x: 1}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/18-calculation-11",
+    "input": "calc(){}calc(){}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-1",
+    "input": "zmatrix",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-2",
+    "input": "zmatrix{}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-3",
+    "input": "zmatrix{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-4",
+    "input": "  C1",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-5",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-6",
+    "input": "zmatrix{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-7",
+    "input": "  C1",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-8",
+    "input": "  H2 C1 1.09",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-9",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-10",
+    "input": "zmatrix{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-11",
+    "input": "  C1",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-12",
+    "input": "  H2 C1 1.09",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-13",
+    "input": "  H3 C1 1.09 H2 109.5",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-14",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-15",
+    "input": "zmatrix{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-16",
+    "input": "  C1",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-17",
+    "input": "  H2 C1 1.09",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-18",
+    "input": "  H3 C1 1.09 H2 109.5",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-19",
+    "input": "  H4 C1 1.09 H2 109.5 H3 120.0",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/19-zmatrix-20",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-1",
+    "input": "mechanism",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-2",
+    "input": "mechanism{}",
+    "parses": true,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-3",
+    "input": "mechanism{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-4",
+    "input": "  step1: A -> B",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-5",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-6",
+    "input": "mechanism{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-7",
+    "input": "  step1: A -> B",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-8",
+    "input": "  step2: B -> C",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-9",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-10",
+    "input": "mechanism{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-11",
+    "input": "  step1: A + B -> C",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-12",
+    "input": "  step2: C -> D + E",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-13",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-14",
+    "input": "mechanism{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-15",
+    "input": "  step1: A -> B",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-16",
+    "input": "  spectator: Na+",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-17",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-18",
+    "input": "mechanism{",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-19",
+    "input": "  step1: 2H_2 + O_2 -> 2H_2O",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-20",
+    "input": "  spectator: Pt",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  },
+  {
+    "id": "fuzz/20-mechanism-21",
+    "input": "}",
+    "parses": false,
+    "tags": [
+      "fuzz"
+    ],
+    "since": "0.1.0"
+  }
+]
