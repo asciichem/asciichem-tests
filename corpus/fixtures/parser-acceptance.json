@@ -1,0 +1,22 @@
+[
+  { "id": "atom/element", "input": "H", "parses": true, "roundTrip": true, "tags": ["atom"], "since": "0.1.0" },
+  { "id": "atom/two-letter-element", "input": "He", "parses": true, "roundTrip": true, "tags": ["atom"], "since": "0.1.0" },
+  { "id": "atom/isotope-prefix", "input": "^14C", "parses": true, "roundTrip": true, "tags": ["atom", "isotope"], "since": "0.1.0" },
+  { "id": "atom/charge-suffix", "input": "Ca^2+", "parses": true, "roundTrip": true, "tags": ["atom", "charge"], "since": "0.1.0" },
+  { "id": "atom/anion", "input": "Cl^-", "parses": true, "roundTrip": true, "tags": ["atom", "charge"], "since": "0.1.0" },
+  { "id": "atom/oxidation-state", "input": "Ca^(II)", "parses": true, "roundTrip": true, "tags": ["atom", "oxidation"], "since": "0.1.0" },
+  { "id": "molecule/subscript", "input": "H_2O", "parses": true, "roundTrip": true, "tags": ["molecule"], "since": "0.1.0" },
+  { "id": "molecule/group-multiplicity", "input": "(OH)_2", "parses": true, "roundTrip": true, "tags": ["group"], "since": "0.1.0" },
+  { "id": "molecule/square-bracket-group", "input": "[OH]_2", "parses": true, "roundTrip": true, "tags": ["group"], "since": "0.1.0" },
+  { "id": "molecule/linear-bonds", "input": "H-O-H", "parses": true, "roundTrip": true, "tags": ["bond"], "since": "0.1.0" },
+  { "id": "molecule/triple-bond", "input": "HC#CH", "parses": true, "roundTrip": true, "tags": ["bond"], "since": "0.1.0" },
+  { "id": "reaction/balanced-synthesis", "input": "2H_2 + O_2 -> 2H_2O", "parses": true, "roundTrip": true, "tags": ["reaction"], "since": "0.1.0" },
+  { "id": "electron-configuration/p", "input": "1s^2 2s^2 2p^6 3d^10 4s^2", "parses": true, "roundTrip": true, "tags": ["electron-configuration"], "since": "0.1.0" },
+  { "id": "embedded-math", "input": "`K_c = 1`", "parses": true, "roundTrip": true, "tags": ["math"], "since": "0.1.0" },
+  { "id": "free-text", "input": "\"free text\"", "parses": true, "roundTrip": true, "tags": ["text"], "since": "0.1.0" },
+  { "id": "lewis/lone-pairs", "input": "::O", "parses": true, "roundTrip": true, "tags": ["lewis"], "since": "0.1.0" },
+  { "id": "reject/empty", "input": "", "parses": false, "tags": ["reject"], "since": "0.1.0" },
+  { "id": "reject/at-signs", "input": "@@@", "parses": false, "tags": ["reject"], "since": "0.1.0" },
+  { "id": "reject/arrow-only", "input": "->", "parses": false, "tags": ["reject"], "since": "0.1.0" },
+  { "id": "reject/dangling-caret", "input": "H^", "parses": false, "tags": ["reject"], "since": "0.1.0" }
+]

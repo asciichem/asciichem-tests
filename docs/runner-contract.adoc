@@ -1,0 +1,42 @@
+= Conformance runner contract
+
+A conformance runner is a thin, implementation-local harness that
+executes this corpus and emits `conformance.json`. It contains no
+fixture logic of its own.
+
+== Requirements
+
+. **Load** every `corpus/fixtures/*.json` file.
+. **Parser fixtures** (`input`/`parses`/`renders`/`roundTrip`):
+  * `parses: true` — parse must succeed; any other exception is a
+    failure of the *implementation*, reported per-case.
+  * `parses: false` — parse must raise the implementation's
+    parse-error type; a successful parse or a different exception
+    class is a failure.
+  * `roundTrip: true` — `parse(input).toText() == input` must hold
+    (L1).
+  * `renders.<format>` present — the rendered output must equal the
+    golden string, after the documented per-format normalisation
+    (whitespace-trim for `text`; none for `mathml`/`cml` goldens).
+  * `model` present (once the implementation emits the canonical wire
+    form — TODO.impl/37) — compare by semantic equality against
+    `asciichem-model` schemas (L0).
+. **Identifier fixtures** (`convention`/`value`/`valid`): the
+  implementation's offline validator must agree with `valid`.
+. **Levels**: a run claims the levels it exercised:
+  L0 parse/serialise, L1 Text round-trip, L2 MathML golden,
+  L3 CML round-trip, L4 linter diagnostics, L5 SVG (optional).
+  A level is only claimed when every fixture tagged for that level
+  was executed.
+. **Emit** `conformance.json` per `corpus/schemas/conformance.schema.json`,
+  with the corpus version (git tag of this repo) recorded.
+. **Never modify fixtures to pass.** A fixture disagreement is either
+  an implementation bug or a corpus bug — corpus bugs are fixed here
+  with a justification against the reference implementation
+  (asciichem-ruby), in a PR.
+
+== Normalisation
+
+- `text` goldens: compare after trailing-whitespace trim.
+- `mathml`/`cml` goldens: byte-equal (implementations must be
+  deterministic — already a spec'd invariant of the reference gem).

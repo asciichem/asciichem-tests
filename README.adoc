@@ -1,0 +1,77 @@
+= AsciiChem Test Corpus
+
+== General
+
+The language-neutral conformance corpus for the AsciiChem ecosystem.
+Every implementation —
+https://github.com/asciichem/asciichem-ruby[asciichem-ruby]
+(reference), asciichem-ts, asciichem-py — runs these fixtures and
+claims conformance levels. The corpus is the spec's teeth: fixtures
+are data, never edited to make a new implementation pass (a fixture
+change requires a justification against the reference
+implementation).
+
+Strategy lives in the workspace-root TODO.v2; execution items in
+https://github.com/asciichem/asciichem.github.io[the spec site]'s
+TODO.impl (33: this scaffold, 34: full migration from the gem's
+specs).
+
+== Layout
+
+[cols="1,3"]
+|===
+|Path |Contents
+
+|`corpus/fixtures/*.json` |Fixtures, grouped one concern per file
+|`corpus/schemas/conformance.schema.json` |The `conformance.json` report schema every runner emits
+|`docs/runner-contract.adoc` |What a conformance runner must do
+|===
+
+== Fixture format
+
+One case or group per file:
+
+[source,json]
+----
+{
+  "id": "atom/isotope-prefix",
+  "input": "^14C",
+  "parses": true,
+  "model": { "type": "formula", "root": { "type": "atom", "element": "C", "isotope": "14" } },
+  "renders": { "text": "^14C" },
+  "roundTrip": true,
+  "tags": ["atom", "isotope"],
+  "since": "0.1.0"
+}
+----
+
+- `parses` — must parse cleanly (true) or raise the implementation's
+  parse-error type (false). Never any other exception.
+- `model` — the canonical wire form (per
+  https://github.com/asciichem/asciichem-model[asciichem-model]
+  schemas) once the gem emits it (TODO.impl/37); parsers compare by
+  semantic equality.
+- `renders` — golden strings per format.
+- `roundTrip` — `parse(input).toText == input` must hold.
+- Identifier fixtures use `convention`/`value`/`valid` triples
+  (format-level only; assignment checking is resolution, not
+  conformance).
+
+== Conformance levels
+
+[cols="1,3"]
+|===
+|Level |Requirement
+
+|L0 |parse/serialise — model JSON matches semantically
+|L1 |Text round-trip
+|L2 |MathML golden
+|L3 |CML round-trip
+|L4 |linter diagnostics
+|L5 |2D SVG (visual; optional)
+|===
+
+Every runner emits `conformance.json` (see the schema): the
+implementation name/version, the corpus version it ran, and
+per-level pass/total. CI publishes it; the spec site renders the
+implementation-status table from these reports.

@@ -1,0 +1,39 @@
+{
+  "$id": "https://github.com/asciichem/asciichem-tests/conformance.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AsciiChem conformance report",
+  "description": "Emitted by every implementation's conformance runner. CI publishes it per run; the spec site renders the implementation-status table from these reports.",
+  "type": "object",
+  "required": ["implementation", "version", "corpusVersion", "levels", "timestamp"],
+  "properties": {
+    "implementation": {
+      "type": "string",
+      "description": "e.g. \"asciichem-ruby\", \"asciichem-ts\"."
+    },
+    "version": {
+      "type": "string",
+      "description": "The implementation's version."
+    },
+    "corpusVersion": {
+      "type": "string",
+      "description": "The asciichem-tests version/tag the run used."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "levels": {
+      "type": "object",
+      "description": "Claimed levels with results; unclaimed levels are omitted.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["pass", "total"],
+        "properties": {
+          "pass": { "type": "integer", "minimum": 0 },
+          "total": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
