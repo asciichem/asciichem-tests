@@ -12,6 +12,7 @@ FIXTURES = Dir[File.join(ROOT, "corpus", "fixtures", "*.json")].sort
 
 PARSER_KEYS = %w[id input parses].freeze
 IDENTIFIER_KEYS = %w[id convention value valid].freeze
+LINT_KEYS = %w[id input lint].freeze
 
 failures = []
 ids = Set.new
@@ -37,7 +38,13 @@ FIXTURES.each do |path|
     failures << "#{where}: duplicate id #{id}" if ids.include?(id)
     ids << id unless id.empty?
 
-    required = case_data.key?("convention") ? IDENTIFIER_KEYS : PARSER_KEYS
+    required = if case_data.key?("convention")
+                 IDENTIFIER_KEYS
+               elsif case_data.key?("lint")
+                 LINT_KEYS
+               else
+                 PARSER_KEYS
+               end
     required.each do |key|
       failures << "#{where}: missing required key #{key}" unless case_data.key?(key)
     end
