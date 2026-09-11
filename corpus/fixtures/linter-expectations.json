@@ -19,7 +19,10 @@
     "id": "lint/unknown-element-warning",
     "input": "Hx_2O",
     "parses": true,
-    "lint": [{ "severity": "warning", "messageIncludes": "Unknown element" }],
+    "lint": [
+      { "severity": "warning", "messageIncludes": "Unknown element" },
+      { "severity": "info", "messageIncludes": "not in valence table" }
+    ],
     "tags": ["lint", "element"],
     "since": "0.2.0"
   },
