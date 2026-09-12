@@ -13,6 +13,8 @@ FIXTURES = Dir[File.join(ROOT, "corpus", "fixtures", "*.json")].sort
 PARSER_KEYS = %w[id input parses].freeze
 IDENTIFIER_KEYS = %w[id convention value valid].freeze
 LINT_KEYS = %w[id input lint].freeze
+SMILES_KEYS = %w[id smiles parses].freeze
+MOLFILE_KEYS = %w[id molfile parses].freeze
 
 failures = []
 ids = Set.new
@@ -42,6 +44,10 @@ FIXTURES.each do |path|
                  IDENTIFIER_KEYS
                elsif case_data.key?("lint")
                  LINT_KEYS
+               elsif case_data.key?("smiles")
+                 SMILES_KEYS
+               elsif case_data.key?("molfile")
+                 MOLFILE_KEYS
                else
                  PARSER_KEYS
                end

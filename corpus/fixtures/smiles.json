@@ -1,0 +1,381 @@
+[
+  {
+    "id": "structure/smiles/ethanol",
+    "smiles": "CCO",
+    "parses": true,
+    "tags": [
+      "chain"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/propane",
+    "smiles": "CCC",
+    "parses": true,
+    "tags": [
+      "chain"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/isopropanol",
+    "smiles": "CC(O)C",
+    "parses": true,
+    "tags": [
+      "branch"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/tert-butanol",
+    "smiles": "CC(C)(C)C",
+    "parses": true,
+    "tags": [
+      "branch"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/neopentane",
+    "smiles": "C(C)(C)(C)(C)C",
+    "parses": true,
+    "tags": [
+      "branch"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/cyclohexane",
+    "smiles": "C1CCCCC1",
+    "parses": true,
+    "tags": [
+      "ring"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/benzene-aromatic",
+    "smiles": "c1ccccc1",
+    "parses": true,
+    "tags": [
+      "ring",
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/benzene-kekule",
+    "smiles": "C1=CC=CC=C1",
+    "parses": true,
+    "tags": [
+      "ring",
+      "kekule"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/naphthalene",
+    "smiles": "c1ccc2ccccc2c1",
+    "parses": true,
+    "tags": [
+      "ring",
+      "fused",
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/aspirin",
+    "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "parses": true,
+    "tags": [
+      "ring",
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/phenol",
+    "smiles": "c1ccccc1O",
+    "parses": true,
+    "tags": [
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/biphenyl",
+    "smiles": "c1ccccc1-c1ccccc1",
+    "parses": true,
+    "tags": [
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": false
+  },
+  {
+    "id": "structure/smiles/nitrogen",
+    "smiles": "N#N",
+    "parses": true,
+    "tags": [
+      "bond",
+      "triple"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/acetic-acid",
+    "smiles": "CC(=O)O",
+    "parses": true,
+    "tags": [
+      "bond",
+      "double"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/water",
+    "smiles": "O",
+    "parses": true,
+    "tags": [
+      "single-atom"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/ammonium",
+    "smiles": "[NH4+]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "charge"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/hydroxide",
+    "smiles": "[OH-]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "charge"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/ferric",
+    "smiles": "[Fe+3]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "charge"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/ferric-plusplus",
+    "smiles": "[Fe+2]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "charge"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/methane-d4",
+    "smiles": "[2H]C([2H])([2H])[2H]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "isotope"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/c14",
+    "smiles": "[13CH4]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "isotope"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/aromatic-nh",
+    "smiles": "[nH]1cccc1",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/decahedrane-loop",
+    "smiles": "C1CCCCCCCCCC1",
+    "parses": true,
+    "tags": [
+      "ring",
+      "big"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/mixture",
+    "smiles": "O.CCO",
+    "parses": true,
+    "tags": [
+      "disconnected"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": true
+  },
+  {
+    "id": "structure/smiles/explicit-bond",
+    "smiles": "C-C-O",
+    "parses": true,
+    "tags": [
+      "bond"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": false
+  },
+  {
+    "id": "structure/smiles/aromatic-bond-symbol",
+    "smiles": "c1:c:c:c:c:1",
+    "parses": true,
+    "tags": [
+      "aromatic"
+    ],
+    "since": "0.3.0",
+    "smilesRoundTrip": false
+  },
+  {
+    "id": "structure/smiles/reject-unclosed-ring",
+    "smiles": "C1CCC",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-chirality",
+    "smiles": "[C@H](O)(C)C",
+    "parses": false,
+    "tags": [
+      "reject",
+      "stereo"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-chirality-double",
+    "smiles": "[C@@H](C)C",
+    "parses": false,
+    "tags": [
+      "reject",
+      "stereo"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-ez-direction",
+    "smiles": "C/C=C/C",
+    "parses": false,
+    "tags": [
+      "reject",
+      "stereo"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-bonded-ring-closure",
+    "smiles": "C=1CCCCC=1",
+    "parses": false,
+    "tags": [
+      "reject",
+      "ring"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-wildcard",
+    "smiles": "C*O",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-trailing-garbage",
+    "smiles": "CC!X",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-stray-bracket",
+    "smiles": "[C",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/reject-empty-component",
+    "smiles": "CC..O",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/isopropanol-bracketed",
+    "smiles": "CC(C)O",
+    "parses": true,
+    "tags": [
+      "branch"
+    ],
+    "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/ferric-plusplus-alt",
+    "smiles": "[Fe++]",
+    "parses": true,
+    "tags": [
+      "bracket",
+      "charge"
+    ],
+    "since": "0.3.0"
+  }
+]
