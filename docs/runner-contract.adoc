@@ -23,6 +23,17 @@ fixture logic of its own.
     `asciichem-model` schemas (L0).
 . **Identifier fixtures** (`convention`/`value`/`valid`): the
   implementation's offline validator must agree with `valid`.
+. **Structure fixtures** (TODO.v2 09; distinct keys so each
+  implementation opts in by level):
+  * `smiles.json` (`smiles`/`parses`/`smilesRoundTrip`): `parse_smiles`
+    must parse or raise exactly as marked; `smilesRoundTrip` asserts
+    `to_smiles(parse_smiles(s)) == s` — the fixture string IS the
+    reference-canonical form (ids live under `structure/smiles/...`
+    because the identifier fixtures own the bare `smiles/` prefix).
+  * `molfile.json` (`molfile`/`parses`/`molfileRoundTrip`/`atoms`/
+    `bonds`): V2000 parse must agree on parse/reject, atom and bond
+    counts, and — for `molfileRoundTrip` — survive a
+    parse/write/parse cycle with the same graph.
 . **Levels**: a run claims the levels it exercised:
   L0 parse/serialise, L1 Text round-trip, L2 MathML golden,
   L3 CML round-trip, L4 linter diagnostics, L5 SVG (optional).
