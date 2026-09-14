@@ -1,0 +1,264 @@
+[
+  {
+    "id": "format/mathml/h-2o",
+    "input": "H_2O",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub>\n        <mi mathvariant=\"normal\">H</mi>\n        <mn>2</mn>\n      </msub>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "subscript"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/2h-2o",
+    "input": "2H_2O",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mn>2</mn>\n      <msub>\n        <mi mathvariant=\"normal\">H</mi>\n        <mn>2</mn>\n      </msub>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "coefficient"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/14c",
+    "input": "^14C",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">C</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <none/>\n        <mn>14</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "isotope"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/235u-2-",
+    "input": "^235U^2+",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mmultiscripts>\n          <mi mathvariant=\"normal\">U</mi>\n          <none/>\n          <none/>\n          <mprescripts/>\n          <none/>\n          <mn>235</mn>\n        </mmultiscripts>\n        <mrow>\n          <mn>2</mn>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "isotope",
+      "charge"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/so-4-2",
+    "input": "SO_4^2-",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">S</mi>\n      <msubsup>\n        <mi mathvariant=\"normal\">O</mi>\n        <mn>4</mn>\n        <mrow>\n          <mn>2</mn>\n          <mo>-</mo>\n        </mrow>\n      </msubsup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "subscript",
+      "charge"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/nh-4",
+    "input": "NH_4^+",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">N</mi>\n      <msubsup>\n        <mi mathvariant=\"normal\">H</mi>\n        <mn>4</mn>\n        <mrow>\n          <mo>+</mo>\n        </mrow>\n      </msubsup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "subscript",
+      "charge"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/oh-2",
+    "input": "(OH)_2",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub>\n        <mrow>\n          <mo>(</mo>\n          <mrow>\n            <mi mathvariant=\"normal\">O</mi>\n            <mi mathvariant=\"normal\">H</mi>\n          </mrow>\n          <mo>)</mo>\n        </mrow>\n        <mn>2</mn>\n      </msub>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "group"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/nh-4-2so-4",
+    "input": "(NH_4)_2SO_4",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub>\n        <mrow>\n          <mo>(</mo>\n          <mrow>\n            <mi mathvariant=\"normal\">N</mi>\n            <msub>\n              <mi mathvariant=\"normal\">H</mi>\n              <mn>4</mn>\n            </msub>\n          </mrow>\n          <mo>)</mo>\n        </mrow>\n        <mn>2</mn>\n      </msub>\n      <mi mathvariant=\"normal\">S</mi>\n      <msub>\n        <mi mathvariant=\"normal\">O</mi>\n        <mn>4</mn>\n      </msub>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "group",
+      "subscript"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/na-cl-nacl",
+    "input": "Na^+ + Cl^- -> NaCl",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <msup>\n          <mi mathvariant=\"normal\">Na</mi>\n          <mrow>\n            <mo>+</mo>\n          </mrow>\n        </msup>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <msup>\n          <mi mathvariant=\"normal\">Cl</mi>\n          <mrow>\n            <mo>-</mo>\n          </mrow>\n        </msup>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">Na</mi>\n        <mi mathvariant=\"normal\">Cl</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "reaction",
+      "charge"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/mn-vii",
+    "input": "Mn^(VII)",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Mn</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">VII</mi>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "oxidation"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/c1-c-c-c-c-c1",
+    "input": "C1-C-C-C-C-C1",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "ring-closure",
+      "bond"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/h-2-i-2-400-o-c-pt-2hi",
+    "input": "H_2 + I_2 <=>[400^o C][Pt] 2HI",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <msub>\n          <mi mathvariant=\"normal\">I</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <munderover>\n        <mo>⇌</mo>\n        <mtext>400^o C</mtext>\n        <mrow>\n          <mrow>\n            <mi mathvariant=\"normal\">Pt</mi>\n          </mrow>\n        </mrow>\n      </munderover>\n      <mrow>\n        <mn>2</mn>\n        <mi mathvariant=\"normal\">H</mi>\n        <mi mathvariant=\"normal\">I</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "reaction",
+      "equilibrium",
+      "conditions"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/c-2h-5oh-ch-3cho-ch-3cooh",
+    "input": "C_2H_5OH -> CH_3CHO -> CH_3COOH",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <msub>\n          <mi mathvariant=\"normal\">C</mi>\n          <mn>2</mn>\n        </msub>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>5</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n        <mi mathvariant=\"normal\">H</mi>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>3</mn>\n        </msub>\n        <mi mathvariant=\"normal\">C</mi>\n        <mi mathvariant=\"normal\">H</mi>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>3</mn>\n        </msub>\n        <mi mathvariant=\"normal\">C</mi>\n        <mi mathvariant=\"normal\">O</mi>\n        <mi mathvariant=\"normal\">O</mi>\n        <mi mathvariant=\"normal\">H</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "cascade"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/1s-2-2s-2-2p-6",
+    "input": "1s^2 2s^2 2p^6",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">1s</mi>\n        <mn>2</mn>\n      </msup>\n      <mo> </mo>\n      <msup>\n        <mi mathvariant=\"normal\">2s</mi>\n        <mn>2</mn>\n      </msup>\n      <mo> </mo>\n      <msup>\n        <mi mathvariant=\"normal\">2p</mi>\n        <mn>6</mn>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "electron-configuration"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/heat-",
+    "input": "\"heat\"",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mtext>heat</mtext>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "text"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/r-c-2h-5oh",
+    "input": "(R)-C_2H_5OH",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mtext>(R)-</mtext>\n      <msub>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>2</mn>\n      </msub>\n      <msub>\n        <mi mathvariant=\"normal\">H</mi>\n        <mn>5</mn>\n      </msub>\n      <mi mathvariant=\"normal\">O</mi>\n      <mi mathvariant=\"normal\">H</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "stereo"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/h-o-h",
+    "input": "H-O-H",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">H</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">H</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "bond"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/cco-cas-64-17-5",
+    "input": "CCO @cas(\"64-17-5\")",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mi mathvariant=\"normal\">C</mi>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "annotation-invisible"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/ch-4-2o-2-co-2-2h-2o",
+    "input": "CH_4 + 2O_2 -> CO_2 + 2H_2O",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>4</mn>\n        </msub>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <mn>2</mn>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <mn>2</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "reaction",
+      "coefficient"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/h-2o-h-oh",
+    "input": "H_2O <-> H^+ + OH^-",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n      <mo>↔</mo>\n      <mrow>\n        <msup>\n          <mi mathvariant=\"normal\">H</mi>\n          <mrow>\n            <mo>+</mo>\n          </mrow>\n        </msup>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">O</mi>\n        <msup>\n          <mi mathvariant=\"normal\">H</mi>\n          <mrow>\n            <mo>-</mo>\n          </mrow>\n        </msup>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "resonance"
+    ],
+    "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/2c-8h-18-25o-2-16co-2-18h-2o",
+    "input": "2C_8H_18 + 25O_2 -> 16CO_2 + 18H_2O",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mn>2</mn>\n        <msub>\n          <mi mathvariant=\"normal\">C</mi>\n          <mn>8</mn>\n        </msub>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>18</mn>\n        </msub>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <mn>25</mn>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mn>16</mn>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <mn>18</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "reaction",
+      "coefficient"
+    ],
+    "since": "0.4.0"
+  }
+]
