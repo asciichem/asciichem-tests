@@ -2,3 +2,4 @@
 pkg/
 coverage/
 .bundle/
+conformance.json
