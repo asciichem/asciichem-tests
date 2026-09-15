@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Fuzz corpus: every input must parse or raise ParseError cleanly.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/fuzz-corpus
+title: AsciiChem fuzz corpus fixture
+type: object
+required: [id, input, parses]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean

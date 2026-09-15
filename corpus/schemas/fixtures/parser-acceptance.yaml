@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Parser acceptance cases: input must parse or reject exactly as marked.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/parser-acceptance
+title: AsciiChem parser acceptance fixture
+type: object
+required: [id, input, parses]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean
+  roundTrip:
+    type: boolean
+    description: parse(input).to_text == input (L1).
+  cmlRoundTrip:
+    type: boolean
+    description: three-way CML round-trip preserves the input (L3).

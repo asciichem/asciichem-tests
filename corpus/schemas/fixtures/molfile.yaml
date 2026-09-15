@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Molfile (V2000) ingestion cases (structure interchange).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/molfile
+title: AsciiChem molfile fixture
+type: object
+required: [id, molfile, parses]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  molfile:
+    type: string
+  parses:
+    type: boolean
+  atoms:
+    type: integer
+    description: expected atom count (required for parseable cases by the runner).
+  bonds:
+    type: integer
+    description: expected bond count (required for parseable cases by the runner).
+  molfileRoundTrip:
+    type: boolean

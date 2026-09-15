@@ -1,0 +1,44 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# AsciiChem Test Suite — Suite Manifest Schema (guards suite.yaml)
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/suite-manifest
+title: AsciiChem suite manifest
+type: object
+required: [id, name, description, version, date, standardization_target_type, standards, suites, levels]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^suite:[a-z0-9-]+$"
+  name:
+    type: string
+  description:
+    type: string
+  maintainer:
+    type: string
+  version:
+    type: string
+    pattern: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+  date:
+    type: string
+    format: date
+  standardization_target_type:
+    type: string
+  standards:
+    type: array
+    items:
+      type: object
+      required: [name, url]
+      additionalProperties: false
+      properties:
+        name: { type: string }
+        url: { type: string }
+  layout:
+    type: object
+    additionalProperties: { type: string }
+  suites:
+    type: array
+    items: { type: string }
+  levels:
+    type: object
+    additionalProperties: { type: string }

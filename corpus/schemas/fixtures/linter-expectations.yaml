@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Linter expectations: exact diagnostics for a linted input.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/linter-expectations
+title: AsciiChem linter expectation fixture
+type: object
+required: [id, input, parses, lint]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean
+  lint:
+    type: array
+    items:
+      type: object
+      required: [severity, messageIncludes]
+      additionalProperties: false
+      properties:
+        severity:
+          enum: [error, warning, info]
+        messageIncludes:
+          type: string

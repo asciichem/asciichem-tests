@@ -1,0 +1,49 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# AsciiChem Test Suite — Suite Manifest
+#
+# Mirrors the iso-8601-test-suite structure: every artifact in this
+# repository is guarded by a YAML Schema (see corpus/schemas/), the
+# suite itself is described here, and versions are tagged.
+---
+id: suite:asciichem
+name: AsciiChem Conformance Corpus
+description: >
+  The shared conformance corpus every AsciiChem implementation runs
+  in its own CI: parser acceptance, identifiers, CML round-trip,
+  fuzz, linter expectations, structure interchange (SMILES, molfile),
+  and MathML goldens. Never edited to make an implementation pass —
+  goldens come from the reference implementation.
+maintainer: asciichem
+version: 0.4.1
+date: "2026-09-15"
+standardization_target_type: asciichem-processor
+standards:
+  - name: AsciiChem syntax specification
+    url: https://www.asciichem.org/syntax/
+  - name: asciichem-model v1 (wire form)
+    url: https://www.asciichem.org/models/
+layout:
+  corpus/fixtures: One JSON array per suite; shape guarded by the
+    matching schema in corpus/schemas/fixtures/.
+  corpus/schemas/fixtures: One YAML Schema per fixture suite
+    (filename-matched).
+  corpus/schemas/conformance.schema.json: Guards the per-implementation
+    conformance report emitted by each implementation's CI.
+suites:
+  - parser-acceptance
+  - fuzz-corpus
+  - identifiers
+  - linter-expectations
+  - cml-roundtrip
+  - smiles
+  - molfile
+  - mathml
+levels:
+  parse/reject: every case parses or rejects exactly as marked
+  L0: emission validates against the asciichem-model v1 JSON Schemas
+  L1: canonical Text round-trip
+  L2: byte-identical MathML against the goldens
+  SMILES: structure ingestion + deterministic emission
+  molfile: V2000 ingestion + emission with coordinates
+  CML: three-way CML round-trip
+  linter: diagnostics match expectations

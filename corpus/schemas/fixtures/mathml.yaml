@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# MathML golden cases (L2): exact-string output of the reference implementation.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/mathml
+title: AsciiChem MathML golden fixture
+type: object
+required: [id, input, parses, mathml]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean
+  roundTrip:
+    type: boolean
+  mathml:
+    type: string
+    description: byte-exact golden; implementations compare as strings.

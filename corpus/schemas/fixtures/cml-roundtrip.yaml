@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# CML round-trip cases.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/cml-roundtrip
+title: AsciiChem CML round-trip fixture
+type: object
+required: [id, input, parses]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean
+  cmlRoundTrip:
+    type: boolean

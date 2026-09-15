@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# SMILES ingestion cases (structure interchange).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/smiles
+title: AsciiChem SMILES fixture
+type: object
+required: [id, smiles, parses]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  smiles:
+    type: string
+  parses:
+    type: boolean
+  smilesRoundTrip:
+    type: boolean
+    description: deterministic writer reproduces the fixture string.
