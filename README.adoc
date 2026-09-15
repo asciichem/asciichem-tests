@@ -22,10 +22,21 @@ specs).
 |===
 |Path |Contents
 
-|`corpus/fixtures/*.json` |Fixtures, grouped one concern per file
+|`suite.yaml` |Suite manifest (id, version, standards, suites, levels) — guarded by `corpus/schemas/fixtures/suite-manifest.yaml`
+|`corpus/fixtures/*.json` |Fixtures, grouped one concern per file — each guarded by its filename-matched YAML Schema
+|`corpus/schemas/fixtures/*.yaml` |One JSON Schema (YAML-encoded) per fixture suite; `additionalProperties: false` catches typo'd keys before they reach an implementation
 |`corpus/schemas/conformance.schema.json` |The `conformance.json` report schema every runner emits
 |`docs/runner-contract.adoc` |What a conformance runner must do
 |===
+
+Every artifact is schema-guarded, mirroring the
+https://github.com/calconnect/iso-8601-test-suite[iso-8601-test-suite]
+structure: `scripts/validate.rb` (run in CI via
+`bundle exec ruby scripts/validate.rb`) checks fast structure
+(ids present and globally unique, molfile counts) *and* validates
+every fixture file and the manifest against their schemas. The
+schemas carry `yaml-language-server` directives, so editors validate
+them live.
 
 == Fixture format
 

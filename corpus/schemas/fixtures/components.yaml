@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Shared definitions for fixture cases.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/components
+title: Shared AsciiChem fixture fields
+type: object
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+    description: Unique case identifier (slash-hierarchical).
+  tags:
+    type: array
+    items: { type: string }
+    description: Free-form discovery tags.
+  since:
+    type: string
+    description: Corpus version the case appeared in.
