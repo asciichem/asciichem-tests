@@ -407,5 +407,16 @@
       "stereo"
     ],
     "since": "0.5.0"
+  },
+  {
+    "id": "structure/smiles/ring-closure-branch",
+    "smiles": "C1=CCC(C)C(C)C1",
+    "parses": true,
+    "tags": [
+      "ring",
+      "writer-stability"
+    ],
+    "since": "0.6.0",
+    "smilesRoundTrip": true
   }
 ]
