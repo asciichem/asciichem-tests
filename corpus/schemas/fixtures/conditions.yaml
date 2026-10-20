@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Condition role entries (item 4): the bracket text stays verbatim;
+# typed `role: value` entries are derived from it. null role = free text.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/conditions
+title: AsciiChem reaction-condition entries fixture
+type: object
+required: [id, input, parses, conditionEntries]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean
+  roundTrip:
+    type: boolean
+  conditionEntries:
+    type: array
+    items:
+      type: object
+      required: [role, value, side]
+      additionalProperties: false
+      properties:
+        role:
+          type: [string, "null"]
+          enum: [catalyst, solvent, reagent, null]
+        value:
+          type: string
+        side:
+          type: string
+          enum: [above, below]
