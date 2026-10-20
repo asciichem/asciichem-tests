@@ -14,7 +14,7 @@ description: >
   and MathML goldens. Never edited to make an implementation pass —
   goldens come from the reference implementation.
 maintainer: asciichem
-version: 0.6.0
+version: 0.7.0
 date: "2026-09-15"
 standardization_target_type: asciichem-processor
 standards:
