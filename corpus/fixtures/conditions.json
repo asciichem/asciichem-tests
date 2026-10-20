@@ -1,0 +1,94 @@
+[
+  {
+    "id": "conditions/typed-catalyst",
+    "input": "A ->[cat: Pd] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": "catalyst", "value": "Pd", "side": "above" }
+    ]
+  },
+  {
+    "id": "conditions/typed-both-sides",
+    "input": "A ->[cat: Pd][solv: THF] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": "catalyst", "value": "Pd", "side": "above" },
+      { "role": "solvent", "value": "THF", "side": "below" }
+    ]
+  },
+  {
+    "id": "conditions/mixed-typed-and-free",
+    "input": "A ->[cat: Pd; reflux] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles", "lossless"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": "catalyst", "value": "Pd", "side": "above" },
+      { "role": null, "value": "reflux", "side": "above" }
+    ]
+  },
+  {
+    "id": "conditions/unknown-prefix-is-free-text",
+    "input": "A ->[temp: 80] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles", "lossless"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": null, "value": "temp: 80", "side": "above" }
+    ]
+  },
+  {
+    "id": "conditions/role-spellings",
+    "input": "A ->[catalyst: Ni][solvent: EtOH] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": "catalyst", "value": "Ni", "side": "above" },
+      { "role": "solvent", "value": "EtOH", "side": "below" }
+    ]
+  },
+  {
+    "id": "conditions/semicolon-separated",
+    "input": "A ->[cat: Pd; solv: THF] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": "catalyst", "value": "Pd", "side": "above" },
+      { "role": "solvent", "value": "THF", "side": "above" }
+    ]
+  },
+  {
+    "id": "conditions/free-text-below",
+    "input": "A <=>[cat: Pd; reflux][water] B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions", "roles", "lossless"],
+    "since": "0.32.0",
+    "conditionEntries": [
+      { "role": "catalyst", "value": "Pd", "side": "above" },
+      { "role": null, "value": "reflux", "side": "above" },
+      { "role": null, "value": "water", "side": "below" }
+    ]
+  },
+  {
+    "id": "conditions/absent",
+    "input": "A -> B",
+    "parses": true,
+    "roundTrip": true,
+    "tags": ["conditions"],
+    "since": "0.32.0",
+    "conditionEntries": []
+  }
+]
