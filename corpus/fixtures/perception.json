@@ -317,15 +317,15 @@
     "canonicalSmiles": "c1ccc2ccccc2c1"
   },
   {
-    "id": "perception/furan-five-membered-pin",
+    "id": "perception/furan-aromatic-flagged",
     "smiles": "c1ccoc1",
     "parses": true,
     "smilesRoundTrip": true,
     "tags": [
       "perception",
       "aromatic",
-      "limitation",
-      "five-membered"
+      "five-membered",
+      "flagged"
     ],
     "since": "0.31.2",
     "perception": {
@@ -336,7 +336,15 @@
         null,
         1
       ],
-      "aromaticRings": []
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
     }
   },
   {
@@ -401,6 +409,146 @@
         0,
         1,
         1
+      ],
+      "aromaticRings": []
+    }
+  },
+  {
+    "id": "perception/furan-kekule",
+    "smiles": "C1=COC=C1",
+    "parses": true,
+    "smilesRoundTrip": false,
+    "canonicalSmiles": "c1cocc1",
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "kekule"
+    ],
+    "since": "0.8.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "perception/pyrrole-kekule",
+    "smiles": "C1=CNC=C1",
+    "parses": true,
+    "smilesRoundTrip": false,
+    "canonicalSmiles": "c1c[nH]cc1",
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "kekule",
+      "heteroatom"
+    ],
+    "since": "0.8.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "perception/thiophene-kekule",
+    "smiles": "C1=CSC=C1",
+    "parses": true,
+    "smilesRoundTrip": false,
+    "canonicalSmiles": "c1cscc1",
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "kekule",
+      "heteroatom"
+    ],
+    "since": "0.8.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "perception/cyclopentadiene-not-aromatic",
+    "smiles": "C1=CCC=C1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "not-aromatic",
+      "four-pi"
+    ],
+    "since": "0.8.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "aromaticRings": []
+    }
+  },
+  {
+    "id": "perception/cyclopropene-not-aromatic",
+    "smiles": "C1=CC1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "not-aromatic",
+      "three-membered"
+    ],
+    "since": "0.8.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        2
       ],
       "aromaticRings": []
     }
