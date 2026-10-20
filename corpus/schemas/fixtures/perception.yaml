@@ -23,6 +23,11 @@ properties:
   smilesRoundTrip:
     type: boolean
     description: deterministic writer reproduces the fixture string.
+  canonicalSmiles:
+    type: string
+    description: >-
+      Deterministic writer output when the input spelling is not the
+      canonical aromatic form.
   perception:
     type: object
     required: [implicitHydrogens, aromaticRings]

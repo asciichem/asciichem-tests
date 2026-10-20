@@ -4,10 +4,15 @@
     "smiles": "C",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "implicit-hydrogens"],
+    "tags": [
+      "perception",
+      "implicit-hydrogens"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [4],
+      "implicitHydrogens": [
+        4
+      ],
       "aromaticRings": []
     }
   },
@@ -16,10 +21,17 @@
     "smiles": "CCO",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "implicit-hydrogens"],
+    "tags": [
+      "perception",
+      "implicit-hydrogens"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [3, 2, 1],
+      "implicitHydrogens": [
+        3,
+        2,
+        1
+      ],
       "aromaticRings": []
     }
   },
@@ -28,10 +40,15 @@
     "smiles": "N",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "implicit-hydrogens"],
+    "tags": [
+      "perception",
+      "implicit-hydrogens"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [3],
+      "implicitHydrogens": [
+        3
+      ],
       "aromaticRings": []
     }
   },
@@ -40,10 +57,15 @@
     "smiles": "O",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "implicit-hydrogens"],
+    "tags": [
+      "perception",
+      "implicit-hydrogens"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [2],
+      "implicitHydrogens": [
+        2
+      ],
       "aromaticRings": []
     }
   },
@@ -52,10 +74,16 @@
     "smiles": "[NH4+]",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "implicit-hydrogens", "charged"],
+    "tags": [
+      "perception",
+      "implicit-hydrogens",
+      "charged"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [0],
+      "implicitHydrogens": [
+        0
+      ],
       "aromaticRings": []
     }
   },
@@ -64,10 +92,16 @@
     "smiles": "[O-]",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "implicit-hydrogens", "charged"],
+    "tags": [
+      "perception",
+      "implicit-hydrogens",
+      "charged"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [null],
+      "implicitHydrogens": [
+        null
+      ],
       "aromaticRings": []
     }
   },
@@ -76,10 +110,21 @@
     "smiles": "C1CCCCC1",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "ring", "not-aromatic"],
+    "tags": [
+      "perception",
+      "ring",
+      "not-aromatic"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [2, 2, 2, 2, 2, 2],
+      "implicitHydrogens": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
       "aromaticRings": []
     }
   },
@@ -87,24 +132,65 @@
     "id": "perception/benzene-kekule",
     "smiles": "C1=CC=CC=C1",
     "parses": true,
-    "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "kekule"],
+    "smilesRoundTrip": false,
+    "tags": [
+      "perception",
+      "aromatic",
+      "kekule"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [1, 1, 1, 1, 1, 1],
-      "aromaticRings": [[0, 1, 2, 3, 4, 5]]
-    }
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
+    },
+    "canonicalSmiles": "c1ccccc1"
   },
   {
     "id": "perception/benzene-aromatic-converges",
     "smiles": "c1ccccc1",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "convergence"],
+    "tags": [
+      "perception",
+      "aromatic",
+      "convergence"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [1, 1, 1, 1, 1, 1],
-      "aromaticRings": [[0, 1, 2, 3, 4, 5]]
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
     }
   },
   {
@@ -112,11 +198,31 @@
     "smiles": "c1ccncc1",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "heteroatom"],
+    "tags": [
+      "perception",
+      "aromatic",
+      "heteroatom"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [1, 1, 1, 0, 1, 1],
-      "aromaticRings": [[0, 1, 2, 3, 4, 5]]
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ]
     }
   },
   {
@@ -124,34 +230,112 @@
     "smiles": "c1ccc2ccccc2c1",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "fused", "declined"],
+    "tags": [
+      "perception",
+      "aromatic",
+      "fused",
+      "declined"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [1, 1, 1, null, 1, 1, 1, 1, null, 1],
-      "aromaticRings": [[0, 1, 2, 3, 8, 9], [3, 4, 5, 6, 7, 8]]
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ]
     }
   },
   {
     "id": "perception/naphthalene-kekule-fused",
     "smiles": "C1=CC=C2C=CC=CC2=C1",
     "parses": true,
-    "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "fused", "kekule"],
+    "smilesRoundTrip": false,
+    "tags": [
+      "perception",
+      "aromatic",
+      "fused",
+      "kekule"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [1, 1, 1, 0, 1, 1, 1, 1, 0, 1],
-      "aromaticRings": [[0, 1, 2, 3, 8, 9], [3, 4, 5, 6, 7, 8]]
-    }
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ]
+    },
+    "canonicalSmiles": "c1ccc2ccccc2c1"
   },
   {
     "id": "perception/furan-five-membered-pin",
     "smiles": "c1ccoc1",
     "parses": true,
     "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "limitation", "five-membered"],
+    "tags": [
+      "perception",
+      "aromatic",
+      "limitation",
+      "five-membered"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [1, 1, 1, null, 1],
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        null,
+        1
+      ],
       "aromaticRings": []
     }
   },
@@ -159,12 +343,66 @@
     "id": "perception/aspirin",
     "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
     "parses": true,
-    "smilesRoundTrip": true,
-    "tags": ["perception", "aromatic", "kekule", "mixed"],
+    "smilesRoundTrip": false,
+    "tags": [
+      "perception",
+      "aromatic",
+      "kekule",
+      "mixed"
+    ],
     "since": "0.31.2",
     "perception": {
-      "implicitHydrogens": [3, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1],
-      "aromaticRings": [[4, 5, 6, 7, 8, 9]]
+      "implicitHydrogens": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "aromaticRings": [
+        [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ]
+    },
+    "canonicalSmiles": "CC(=O)Oc1ccccc1C(=O)O"
+  },
+  {
+    "id": "perception/para-quinone-not-aromatic",
+    "smiles": "O=C1C=CC(=O)C=C1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "not-aromatic",
+      "exocyclic-double"
+    ],
+    "since": "0.7.0",
+    "perception": {
+      "implicitHydrogens": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "aromaticRings": []
     }
   }
 ]

@@ -79,7 +79,8 @@
       "kekule"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": false,
+    "canonicalSmiles": "c1ccccc1"
   },
   {
     "id": "structure/smiles/naphthalene",
@@ -102,7 +103,8 @@
       "aromatic"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": false,
+    "canonicalSmiles": "CC(=O)Oc1ccccc1C(=O)O"
   },
   {
     "id": "structure/smiles/phenol",
