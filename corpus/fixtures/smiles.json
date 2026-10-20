@@ -284,34 +284,34 @@
     "since": "0.3.0"
   },
   {
-    "id": "structure/smiles/reject-chirality",
+    "id": "structure/smiles/chirality",
     "smiles": "[C@H](O)(C)C",
-    "parses": false,
+    "parses": true,
     "tags": [
-      "reject",
+      "accept",
       "stereo"
     ],
-    "since": "0.3.0"
+    "since": "0.5.0"
   },
   {
-    "id": "structure/smiles/reject-chirality-double",
+    "id": "structure/smiles/chirality-double",
     "smiles": "[C@@H](C)C",
-    "parses": false,
+    "parses": true,
     "tags": [
-      "reject",
+      "accept",
       "stereo"
     ],
-    "since": "0.3.0"
+    "since": "0.5.0"
   },
   {
-    "id": "structure/smiles/reject-ez-direction",
+    "id": "structure/smiles/ez-direction",
     "smiles": "C/C=C/C",
-    "parses": false,
+    "parses": true,
     "tags": [
-      "reject",
+      "accept",
       "stereo"
     ],
-    "since": "0.3.0"
+    "since": "0.5.0"
   },
   {
     "id": "structure/smiles/reject-bonded-ring-closure",
@@ -377,5 +377,35 @@
       "charge"
     ],
     "since": "0.3.0"
+  },
+  {
+    "id": "structure/smiles/chirality-enantiomer-pair",
+    "smiles": "N[C@@H](C)C(=O)O",
+    "parses": true,
+    "tags": [
+      "accept",
+      "stereo"
+    ],
+    "since": "0.5.0"
+  },
+  {
+    "id": "structure/smiles/chirality-enantiomer-pair-2",
+    "smiles": "N[C@H](C)C(=O)O",
+    "parses": true,
+    "tags": [
+      "accept",
+      "stereo"
+    ],
+    "since": "0.5.0"
+  },
+  {
+    "id": "structure/smiles/ez-isomer-2",
+    "smiles": "F/C=C\\F",
+    "parses": true,
+    "tags": [
+      "accept",
+      "stereo"
+    ],
+    "since": "0.5.0"
   }
 ]
