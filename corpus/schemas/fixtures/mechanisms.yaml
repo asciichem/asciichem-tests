@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Mechanism cases (item 4): steps with electron-flow markers.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/mechanisms
+title: AsciiChem mechanism fixture
+type: object
+required: [id, input, parses, flows]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+  parses:
+    type: boolean
+  roundTrip:
+    type: boolean
+  modelJsonRoundTrip:
+    type: boolean
+    description: >-
+      Wire ingestion is implemented for the core chemistry set only;
+      mechanism fixtures flag false so the text round-trip stays
+      asserted without claiming a wire round-trip that does not exist.
+  flows:
+    type: object
+    description: Expected flow markers per step label.
+    additionalProperties:
+      type: array
+      items:
+        type: object
+        required: [source, target]
+        additionalProperties: false
+        properties:
+          source: { type: string }
+          target: { type: string }
