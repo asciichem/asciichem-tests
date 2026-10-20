@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Perception cases (item 2): implicit hydrogens and aromatic rings as
+# shared semantics. null hydrogens = perception declines (never invents).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/perception
+title: AsciiChem perception fixture
+type: object
+required: [id, smiles, parses, perception]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  smiles:
+    type: string
+  parses:
+    type: boolean
+  smilesRoundTrip:
+    type: boolean
+    description: deterministic writer reproduces the fixture string.
+  perception:
+    type: object
+    required: [implicitHydrogens, aromaticRings]
+    additionalProperties: false
+    properties:
+      implicitHydrogens:
+        type: array
+        description: per-atom count in graph order; null = declines.
+        items:
+          type: [integer, "null"]
+          minimum: 0
+      aromaticRings:
+        type: array
+        description: perceived rings as sorted atom-index arrays.
+        items:
+          type: array
+          items: { type: integer, minimum: 0 }
