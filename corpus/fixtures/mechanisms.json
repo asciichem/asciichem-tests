@@ -1,0 +1,62 @@
+[
+  {
+    "id": "mechanism/flows-step",
+    "input": "mechanism{\n  s1: A-B -> A + B | flow: A-B > A; B > B-C\n  s2: A + C -> A-C\n}",
+    "parses": true,
+    "roundTrip": true,
+    "tags": [
+      "mechanism",
+      "electron-flow"
+    ],
+    "since": "0.7.0",
+    "flows": {
+      "s1": [
+        {
+          "source": "A-B",
+          "target": "A"
+        },
+        {
+          "source": "B",
+          "target": "B-C"
+        }
+      ],
+      "s2": []
+    },
+    "modelJsonRoundTrip": false
+  },
+  {
+    "id": "mechanism/flows-with-spectator",
+    "input": "mechanism{\n  s1: A -> B | flow: A > B\n  spectator: Na^+\n}",
+    "parses": true,
+    "roundTrip": true,
+    "tags": [
+      "mechanism",
+      "electron-flow",
+      "spectator"
+    ],
+    "since": "0.7.0",
+    "flows": {
+      "s1": [
+        {
+          "source": "A",
+          "target": "B"
+        }
+      ]
+    },
+    "modelJsonRoundTrip": false
+  },
+  {
+    "id": "mechanism/no-flows",
+    "input": "mechanism{\n  step1: A -> B\n}",
+    "parses": true,
+    "roundTrip": true,
+    "tags": [
+      "mechanism"
+    ],
+    "since": "0.7.0",
+    "flows": {
+      "step1": []
+    },
+    "modelJsonRoundTrip": false
+  }
+]
