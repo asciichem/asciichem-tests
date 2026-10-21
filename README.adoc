@@ -86,3 +86,13 @@ Every runner emits `conformance.json` (see the schema): the
 implementation name/version, the corpus version it ran, and
 per-level pass/total. CI publishes it; the spec site renders the
 implementation-status table from these reports.
+
+== Release discipline
+
+Versions are tagged (`v0.6.0`, `v0.7.0`, `v0.8.0`, ...) at
+content-complete states; `suite.yaml`'s version is bumped when a
+release line begins. Implementations pin their CI to a tag (never
+`main`) — a corpus change lands in each implementation as a visible
+one-line pin bump, not as ambient drift. The corpus itself never
+weakens a contract: fixture edits that change a verdict ride a
+version bump.
