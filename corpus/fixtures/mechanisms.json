@@ -21,8 +21,7 @@
         }
       ],
       "s2": []
-    },
-    "modelJsonRoundTrip": false
+    }
   },
   {
     "id": "mechanism/flows-with-spectator",
@@ -42,8 +41,7 @@
           "target": "B"
         }
       ]
-    },
-    "modelJsonRoundTrip": false
+    }
   },
   {
     "id": "mechanism/no-flows",
@@ -56,7 +54,6 @@
     "since": "0.7.0",
     "flows": {
       "step1": []
-    },
-    "modelJsonRoundTrip": false
+    }
   }
 ]

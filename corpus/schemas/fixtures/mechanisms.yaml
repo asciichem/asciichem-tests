@@ -21,12 +21,6 @@ properties:
     type: boolean
   roundTrip:
     type: boolean
-  modelJsonRoundTrip:
-    type: boolean
-    description: >-
-      Wire ingestion is implemented for the core chemistry set only;
-      mechanism fixtures flag false so the text round-trip stays
-      asserted without claiming a wire round-trip that does not exist.
   flows:
     type: object
     description: Expected flow markers per step label.
