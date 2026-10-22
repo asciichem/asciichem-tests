@@ -82,6 +82,11 @@ One case or group per file:
 |L5 |2D SVG (visual; optional)
 |===
 
+The identity (InChI oracle) family lives in its own suite:
+[asciichem/inchi-tests](https://github.com/asciichem/inchi-tests) —
+extracted 2026-10-22 so the InChI engines (reference + Rust) gate on
+it directly.
+
 Every runner emits `conformance.json` (see the schema): the
 implementation name/version, the corpus version it ran, and
 per-level pass/total. CI publishes it; the spec site renders the
