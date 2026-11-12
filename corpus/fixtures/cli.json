@@ -46,9 +46,6 @@
     ],
     "exit": 0,
     "stdout": "<span class=\"asciichem\">H<sub>2</sub>O</span>\n",
-    "pending": [
-      "asciichem-rs"
-    ],
     "tags": [
       "cli",
       "convert",
@@ -67,9 +64,6 @@
     ],
     "exit": 0,
     "stdout": "\\ce{H2O}\n",
-    "pending": [
-      "asciichem-rs"
-    ],
     "tags": [
       "cli",
       "convert",
@@ -336,9 +330,6 @@
         "message": "Crystal a must be positive, got -1",
         "node": "Crystal(x)"
       }
-    ],
-    "pending": [
-      "asciichem-rs"
     ],
     "tags": [
       "cli",
