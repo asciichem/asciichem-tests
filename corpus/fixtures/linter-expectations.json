@@ -187,8 +187,8 @@
     "since": "0.11.0"
   },
   {
-    "id": "lint/iupac-no-validator-skip",
-    "input": "C @iupac(\"methane\")",
+    "id": "lint/chebi-no-validator-skip",
+    "input": "C @chebi(\"CHEBI:16183\")",
     "parses": true,
     "lint": [],
     "tags": ["lint", "identifier", "format"],
