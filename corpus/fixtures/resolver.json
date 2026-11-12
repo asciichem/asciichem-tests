@@ -1,0 +1,604 @@
+[
+  {
+    "id": "resolver/pubchem-name-aspirin",
+    "source": "pubchem",
+    "convention": "name",
+    "value": "aspirin",
+    "request": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/aspirin/property/CanonicalSMILES,IsomericSMILES,MolecularFormula,MolecularWeight,IUPACName,InChI,InChIKey/JSON",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "PropertyTable": {
+          "Properties": [
+            {
+              "CID": 2244,
+              "CanonicalSMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "IsomericSMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "MolecularFormula": "C9H8O4",
+              "MolecularWeight": "180.16",
+              "IUPACName": "2-acetyloxybenzoic acid",
+              "InChI": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "InChIKey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+            }
+          ]
+        }
+      }
+    },
+    "expectation": {
+      "substance": {
+        "type": "substance-record",
+        "preferredName": "2-acetyloxybenzoic acid",
+        "formula": "C9H8O4",
+        "molecularWeight": 180.16,
+        "identifiers": [
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "2244",
+              "convention": "pubchem-cid"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+              "convention": "inchikey"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "convention": "inchi"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "convention": "canonical-smiles"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          }
+        ],
+        "properties": [
+          {
+            "name": "molecular-formula",
+            "value": "C9H8O4",
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "name": "molecular-weight",
+            "value": "180.16",
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            },
+            "units": "g/mol"
+          }
+        ]
+      },
+      "structureParses": true,
+      "outcome": "resolved",
+      "cache": {
+        "ttlSeconds": 604800,
+        "keyFormula": "sha256(\"source:convention:value\")",
+        "servesOffline": true
+      }
+    },
+    "tags": [
+      "resolver",
+      "pubchem",
+      "aspirin"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "resolver/pubchem-cas-aspirin",
+    "source": "pubchem",
+    "convention": "cas",
+    "value": "50-78-2",
+    "request": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/50-78-2/property/CanonicalSMILES,IsomericSMILES,MolecularFormula,MolecularWeight,IUPACName,InChI,InChIKey/JSON",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "PropertyTable": {
+          "Properties": [
+            {
+              "CID": 2244,
+              "CanonicalSMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "IsomericSMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "MolecularFormula": "C9H8O4",
+              "MolecularWeight": "180.16",
+              "IUPACName": "2-acetyloxybenzoic acid",
+              "InChI": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "InChIKey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+            }
+          ]
+        }
+      }
+    },
+    "expectation": {
+      "substance": {
+        "type": "substance-record",
+        "preferredName": "2-acetyloxybenzoic acid",
+        "formula": "C9H8O4",
+        "molecularWeight": 180.16,
+        "identifiers": [
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "2244",
+              "convention": "pubchem-cid"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+              "convention": "inchikey"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "convention": "inchi"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "convention": "canonical-smiles"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          }
+        ],
+        "properties": [
+          {
+            "name": "molecular-formula",
+            "value": "C9H8O4",
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "name": "molecular-weight",
+            "value": "180.16",
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            },
+            "units": "g/mol"
+          }
+        ]
+      },
+      "structureParses": true,
+      "outcome": "resolved",
+      "cache": {
+        "ttlSeconds": 604800,
+        "keyFormula": "sha256(\"source:convention:value\")",
+        "servesOffline": true
+      }
+    },
+    "tags": [
+      "resolver",
+      "pubchem",
+      "aspirin",
+      "cas"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "resolver/pubchem-cid-aspirin",
+    "source": "pubchem",
+    "convention": "pubchem-cid",
+    "value": "2244",
+    "request": {
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/property/CanonicalSMILES,IsomericSMILES,MolecularFormula,MolecularWeight,IUPACName,InChI,InChIKey/JSON",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "PropertyTable": {
+          "Properties": [
+            {
+              "CID": 2244,
+              "CanonicalSMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "IsomericSMILES": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "MolecularFormula": "C9H8O4",
+              "MolecularWeight": "180.16",
+              "IUPACName": "2-acetyloxybenzoic acid",
+              "InChI": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "InChIKey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+            }
+          ]
+        }
+      }
+    },
+    "expectation": {
+      "substance": {
+        "type": "substance-record",
+        "preferredName": "2-acetyloxybenzoic acid",
+        "formula": "C9H8O4",
+        "molecularWeight": 180.16,
+        "identifiers": [
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "2244",
+              "convention": "pubchem-cid"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+              "convention": "inchikey"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "convention": "inchi"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "convention": "canonical-smiles"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          }
+        ],
+        "properties": [
+          {
+            "name": "molecular-formula",
+            "value": "C9H8O4",
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            }
+          },
+          {
+            "name": "molecular-weight",
+            "value": "180.16",
+            "provenance": {
+              "type": "provenance",
+              "source": "pubchem",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "PubChem, U.S. National Library of Medicine"
+            },
+            "units": "g/mol"
+          }
+        ]
+      },
+      "structureParses": true,
+      "outcome": "resolved",
+      "cache": {
+        "ttlSeconds": 604800,
+        "keyFormula": "sha256(\"source:convention:value\")",
+        "servesOffline": true
+      }
+    },
+    "tags": [
+      "resolver",
+      "pubchem",
+      "aspirin",
+      "cid"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "resolver/common-chemistry-cas-aspirin",
+    "source": "common_chemistry",
+    "convention": "cas",
+    "value": "50-78-2",
+    "request": {
+      "url": "https://commonchemistry.cas.org/direct-api/detail?cas_rn=50-78-2",
+      "headers": {
+        "Accept": "application/json",
+        "x-origin": "https://commonchemistry.cas.org/api-overview",
+        "X-API-KEY": "{api-key}"
+      }
+    },
+    "response": {
+      "status": 200,
+      "body": {
+        "rn": "50-78-2",
+        "name": "Aspirin",
+        "formula": "C9H8O4",
+        "molecularMass": 180.16,
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+        "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+        "iupacName": "2-acetyloxybenzoic acid",
+        "experimentalProperties": []
+      }
+    },
+    "expectation": {
+      "substance": {
+        "type": "substance-record",
+        "preferredName": "Aspirin",
+        "formula": "C9H8O4",
+        "identifiers": [
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "50-78-2",
+              "convention": "cas"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+              "convention": "inchikey"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "CC(=O)OC1=CC=CC=C1C(=O)O",
+              "convention": "canonical-smiles"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+              "convention": "inchi"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            }
+          },
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "2-acetyloxybenzoic acid",
+              "convention": "iupac-name"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            }
+          }
+        ],
+        "properties": [
+          {
+            "name": "molecular-formula",
+            "value": "C9H8O4",
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            }
+          },
+          {
+            "name": "molecular-weight",
+            "value": "180.16",
+            "provenance": {
+              "type": "provenance",
+              "source": "common_chemistry",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+            },
+            "units": "g/mol"
+          }
+        ]
+      },
+      "structureParses": true,
+      "outcome": "resolved",
+      "cache": {
+        "ttlSeconds": 604800,
+        "keyFormula": "sha256(\"source:convention:value\")",
+        "servesOffline": true
+      }
+    },
+    "tags": [
+      "resolver",
+      "common-chemistry",
+      "aspirin",
+      "cas",
+      "cc-by-nc"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "resolver/common-chemistry-cas-no-key",
+    "source": "common_chemistry",
+    "convention": "cas",
+    "value": "50-78-2",
+    "request": {
+      "url": "https://commonchemistry.cas.org/direct-api/detail?cas_rn=50-78-2",
+      "headers": {
+        "Accept": "application/json",
+        "x-origin": "https://commonchemistry.cas.org/api-overview"
+      }
+    },
+    "response": {
+      "status": 401
+    },
+    "expectation": {
+      "substance": null,
+      "outcome": "skipped",
+      "cache": {
+        "ttlSeconds": 604800,
+        "keyFormula": "sha256(\"source:convention:value\")",
+        "servesOffline": true
+      }
+    },
+    "tags": [
+      "resolver",
+      "common-chemistry",
+      "key-gated",
+      "skipped"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "resolver/opsin-iupac-name-2-3-dimethylbutane",
+    "source": "opsin",
+    "convention": "iupac-name",
+    "value": "2,3-dimethylbutane",
+    "request": {
+      "url": "https://opsin.ch.cam.ac.uk/opsin/2%2C3-dimethylbutane.smiles",
+      "headers": {}
+    },
+    "response": {
+      "status": 200,
+      "body": "CC(C)C(C)\n"
+    },
+    "expectation": {
+      "substance": {
+        "type": "substance-record",
+        "identifiers": [
+          {
+            "identifier": {
+              "type": "identifier",
+              "value": "CC(C)C(C)",
+              "convention": "canonical-smiles"
+            },
+            "provenance": {
+              "type": "provenance",
+              "source": "opsin",
+              "retrievedAt": "2026-01-05T09:30:00Z",
+              "attribution": "OPSIN, University of Cambridge Centre for Molecular Informatics"
+            }
+          }
+        ]
+      },
+      "structureParses": true,
+      "outcome": "resolved",
+      "cache": {
+        "ttlSeconds": 604800,
+        "keyFormula": "sha256(\"source:convention:value\")",
+        "servesOffline": true
+      }
+    },
+    "tags": [
+      "resolver",
+      "opsin",
+      "name-to-structure"
+    ],
+    "since": "0.11.0"
+  }
+]

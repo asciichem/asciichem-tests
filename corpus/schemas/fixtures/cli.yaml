@@ -1,0 +1,54 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# CLI contract fixtures: invocation -> stdout -> exit-code triples for
+# the offline command set, mirrored from the Ruby reference CLI and
+# the Rust port. Error text rides stderr; stdout matchers are exact
+# (`stdout`), substring (`stdoutIncludes` — every entry must appear),
+# or semantic JSON (`stdoutJson` — compared as parsed JSON, so key
+# order cannot fail a case). The "{version}" placeholder in a stdout
+# matcher stands for the implementation's own version.
+#
+# `pending` lists implementations that do not pass the case yet (they
+# skip and report; never silently wrong).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/cli
+title: AsciiChem CLI contract fixture
+type: object
+required: [id, invocation, exit]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  invocation:
+    type: array
+    minItems: 1
+    items: { type: string }
+    description: The argv after the program name.
+  exit:
+    type: integer
+    description: The process exit code (parse errors 1, unknown
+      convert format 2, resolve 3, cite 4, identity 5).
+  stdout:
+    type: string
+    description: Exact stdout match ("{version}" is a placeholder).
+  stdoutIncludes:
+    type: array
+    minItems: 1
+    items: { type: string }
+    description: Every entry must appear in stdout.
+  stdoutJson:
+    description: Semantic equality against the parsed stdout JSON.
+  stderrIncludes:
+    type: array
+    minItems: 1
+    items: { type: string }
+    description: Every entry must appear in stderr.
+  pending:
+    type: array
+    items: { type: string }
+    description: Implementation ids that cannot run the case yet.
