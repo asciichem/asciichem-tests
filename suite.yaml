@@ -14,8 +14,8 @@ description: >
   and MathML goldens. Never edited to make an implementation pass —
   goldens come from the reference implementation.
 maintainer: asciichem
-version: 0.10.0
-date: "2026-09-15"
+version: 0.11.0
+date: "2026-11-12"
 standardization_target_type: asciichem-processor
 standards:
   - name: AsciiChem syntax specification
@@ -38,6 +38,9 @@ suites:
   - smiles
   - molfile
   - mathml
+  - resolver
+  - citation
+  - cli
 levels:
   parse/reject: every case parses or rejects exactly as marked
   L0: emission validates against the asciichem-model v1 JSON Schemas
@@ -46,4 +49,8 @@ levels:
   SMILES: structure ingestion + deterministic emission
   molfile: V2000 ingestion + emission with coordinates
   CML: three-way CML round-trip
-  linter: diagnostics match expectations
+  linter: diagnostics match expectations (engine-posture aware)
+  resolver: recorded-source resolution, provenance, and TTL caching
+  citation: byte-identical dataset bibitem goldens
+  cli: invocation -> stdout -> exit-code contract for the offline
+    command set

@@ -1,0 +1,427 @@
+[
+  {
+    "id": "cli/convert-text",
+    "invocation": [
+      "convert",
+      "-i",
+      "H_2O",
+      "-t",
+      "text"
+    ],
+    "exit": 0,
+    "stdout": "H_2O\n",
+    "tags": [
+      "cli",
+      "convert",
+      "text"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-mathml-default",
+    "invocation": [
+      "convert",
+      "-i",
+      "H_2O"
+    ],
+    "exit": 0,
+    "stdoutIncludes": [
+      "<math"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "mathml"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-html",
+    "invocation": [
+      "convert",
+      "-i",
+      "H_2O",
+      "-t",
+      "html"
+    ],
+    "exit": 0,
+    "stdout": "<span class=\"asciichem\">H<sub>2</sub>O</span>\n",
+    "pending": [
+      "asciichem-rs"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "html"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-latex",
+    "invocation": [
+      "convert",
+      "-i",
+      "H_2O",
+      "-t",
+      "latex"
+    ],
+    "exit": 0,
+    "stdout": "\\ce{H2O}\n",
+    "pending": [
+      "asciichem-rs"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "latex"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-svg",
+    "invocation": [
+      "convert",
+      "-i",
+      "H_2O",
+      "-t",
+      "svg"
+    ],
+    "exit": 0,
+    "stdoutIncludes": [
+      "<svg"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "svg"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-model-json",
+    "invocation": [
+      "convert",
+      "-i",
+      "H_2O",
+      "-t",
+      "model-json"
+    ],
+    "exit": 0,
+    "stdoutJson": {
+      "type": "formula",
+      "nodes": [
+        {
+          "type": "molecule",
+          "nodes": [
+            {
+              "type": "atom",
+              "element": "H",
+              "subscript": "2"
+            },
+            {
+              "type": "atom",
+              "element": "O"
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      "cli",
+      "convert",
+      "model-json"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-smiles-to-text",
+    "invocation": [
+      "convert",
+      "-i",
+      "CCO",
+      "--from",
+      "smiles",
+      "-t",
+      "text"
+    ],
+    "exit": 0,
+    "stdout": "C-C-O\n",
+    "tags": [
+      "cli",
+      "convert",
+      "smiles"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-smiles-to-smiles",
+    "invocation": [
+      "convert",
+      "-i",
+      "CC(=O)OC1=CC=CC=C1C(=O)O",
+      "--from",
+      "smiles",
+      "-t",
+      "smiles"
+    ],
+    "exit": 0,
+    "stdout": "CC(=O)Oc1ccccc1C(=O)O\n",
+    "tags": [
+      "cli",
+      "convert",
+      "smiles",
+      "canonical"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-parse-error",
+    "invocation": [
+      "convert",
+      "-i",
+      "   "
+    ],
+    "exit": 1,
+    "stderrIncludes": [
+      "Parse error"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "error"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-missing-input",
+    "invocation": [
+      "convert"
+    ],
+    "exit": 1,
+    "stderrIncludes": [
+      "provide -i INPUT or -f FILE"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "error"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/convert-unknown-format",
+    "invocation": [
+      "convert",
+      "-i",
+      "H",
+      "-t",
+      "wav"
+    ],
+    "exit": 2,
+    "stderrIncludes": [
+      "Format error"
+    ],
+    "tags": [
+      "cli",
+      "convert",
+      "error",
+      "format"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/roundtrip-ok",
+    "invocation": [
+      "roundtrip",
+      "-i",
+      "H_2O"
+    ],
+    "exit": 0,
+    "stdout": "H_2O\n",
+    "tags": [
+      "cli",
+      "roundtrip"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/roundtrip-mismatch",
+    "invocation": [
+      "roundtrip",
+      "-i",
+      "H2O"
+    ],
+    "exit": 1,
+    "stderrIncludes": [
+      "round-trip mismatch"
+    ],
+    "tags": [
+      "cli",
+      "roundtrip",
+      "error"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/lint-balance-error",
+    "invocation": [
+      "lint",
+      "-i",
+      "H_2 + O_2 -> H_2O"
+    ],
+    "exit": 1,
+    "stdoutIncludes": [
+      "[error] Reaction: Reaction is not balanced: O: 2 vs 1"
+    ],
+    "tags": [
+      "cli",
+      "lint",
+      "balance"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/lint-clean",
+    "invocation": [
+      "lint",
+      "-i",
+      "H_2O"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "tags": [
+      "cli",
+      "lint",
+      "clean"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/lint-json",
+    "invocation": [
+      "lint",
+      "-i",
+      "H_2 + O_2 -> H_2O",
+      "-f",
+      "json"
+    ],
+    "exit": 1,
+    "stdoutJson": [
+      {
+        "severity": "error",
+        "message": "Reaction is not balanced: O: 2 vs 1",
+        "node": "Reaction"
+      }
+    ],
+    "tags": [
+      "cli",
+      "lint",
+      "json"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/lint-json-crystal",
+    "invocation": [
+      "lint",
+      "-i",
+      "crystal[x](a=-1){Na@f(0,0,0)}",
+      "-f",
+      "json"
+    ],
+    "exit": 1,
+    "stdoutJson": [
+      {
+        "severity": "error",
+        "message": "Crystal a must be positive, got -1",
+        "node": "Crystal(x)"
+      }
+    ],
+    "pending": [
+      "asciichem-rs"
+    ],
+    "tags": [
+      "cli",
+      "lint",
+      "json",
+      "crystal"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/validate-mixed",
+    "invocation": [
+      "validate",
+      "-i",
+      "H_2O @cas(\"7732-18-5\") @cas(\"50-7-8\")"
+    ],
+    "exit": 1,
+    "stdout": "cas          7732-18-5                                ok\ncas          50-7-8                                   INVALID\n",
+    "tags": [
+      "cli",
+      "validate"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/validate-none",
+    "invocation": [
+      "validate",
+      "-i",
+      "H_2O"
+    ],
+    "exit": 0,
+    "stdout": "no identifier annotations found\n",
+    "tags": [
+      "cli",
+      "validate"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/parse-cml-water",
+    "invocation": [
+      "parse-cml",
+      "-i",
+      "<cml xmlns=\"http://www.xml-cml.org/schema\"><molecule id=\"m1\"><atomArray><atom id=\"a1\" elementType=\"H\" count=\"2\"/><atom id=\"a2\" elementType=\"O\"/></atomArray></molecule></cml>"
+    ],
+    "exit": 0,
+    "stdout": "H_2O\n",
+    "tags": [
+      "cli",
+      "parse-cml"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/version",
+    "invocation": [
+      "version"
+    ],
+    "exit": 0,
+    "stdout": "asciichem {version}\n",
+    "tags": [
+      "cli",
+      "version"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "cli/tree",
+    "invocation": [
+      "tree"
+    ],
+    "exit": 0,
+    "stdoutIncludes": [
+      "ascii_chem:cli",
+      "├─ cite (Resolve a substance and emit a dataset-type Relaton bibitem (XML))",
+      "├─ convert (Convert INPUT to FORMAT (mathml|text|html|latex|svg|structural-svg|model-json|cml|smiles|molfile))",
+      "└─ version (Print the asciichem version)"
+    ],
+    "tags": [
+      "cli",
+      "tree"
+    ],
+    "since": "0.11.0"
+  }
+]

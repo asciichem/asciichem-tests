@@ -1,5 +1,23 @@
 # yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
 # Linter expectations: exact diagnostics for a linted input.
+#
+# Match semantics: every expectation must match at least one actual
+# diagnostic (same severity, message containing `messageIncludes`, and
+# — when given — the same node label) AND every actual diagnostic must
+# match at least one expectation. A case with empty `lint` demands a
+# completely clean run.
+#
+# Engine posture (`engine`): identity derivation is engine-scaled. A
+# case marked `none` encodes the no-engine posture (the identity
+# cross-check's skip warning); a case marked `inchi` encodes the
+# with-engine posture (the cross-check computing and comparing). A
+# runner whose posture differs from the marker SKIPS the case and
+# reports the skip — a missing engine is a posture, not a failure.
+# Absent `engine` means the case is engine-independent: every runner
+# must execute it.
+#
+# `pending` lists implementations that do not pass the case yet (they
+# skip and report, never fail silently on it).
 ---
 $id: https://github.com/asciichem/asciichem-tests/v1/fixtures/linter-expectations
 title: AsciiChem linter expectation fixture
@@ -19,6 +37,15 @@ properties:
     type: string
   parses:
     type: boolean
+  engine:
+    enum: [none, inchi]
+    description: >-
+      The identity-engine posture the expectations assume. Absent =
+      engine-independent (every runner executes the case).
+  pending:
+    type: array
+    items: { type: string }
+    description: Implementation ids that cannot run the case yet.
   lint:
     type: array
     items:
@@ -30,3 +57,11 @@ properties:
           enum: [error, warning, info]
         messageIncludes:
           type: string
+        node:
+          type: string
+          description: >-
+            The diagnostic's node label where implementations agree
+            (e.g. "Atom(C)", "Reaction"). Omitted for molecule-level
+            diagnostics, whose labels are implementation-local (the
+            reference prints "Molecule"; the Rust port prints the hill
+            formula).

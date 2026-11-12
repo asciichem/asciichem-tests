@@ -1,0 +1,290 @@
+[
+  {
+    "id": "citation/pubchem-aspirin",
+    "substance": {
+      "type": "substance-record",
+      "preferredName": "2-acetyloxybenzoic acid",
+      "formula": "C9H8O4",
+      "molecularWeight": 180.16,
+      "identifiers": [
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "2244",
+            "convention": "pubchem-cid"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "pubchem",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "PubChem, U.S. National Library of Medicine"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+            "convention": "inchikey"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "pubchem",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "PubChem, U.S. National Library of Medicine"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+            "convention": "inchi"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "pubchem",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "PubChem, U.S. National Library of Medicine"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "CC(=O)OC1=CC=CC=C1C(=O)O",
+            "convention": "canonical-smiles"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "pubchem",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "PubChem, U.S. National Library of Medicine"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "molecular-formula",
+          "value": "C9H8O4",
+          "provenance": {
+            "type": "provenance",
+            "source": "pubchem",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "PubChem, U.S. National Library of Medicine"
+          }
+        },
+        {
+          "name": "molecular-weight",
+          "value": "180.16",
+          "provenance": {
+            "type": "provenance",
+            "source": "pubchem",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "PubChem, U.S. National Library of Medicine"
+          },
+          "units": "g/mol"
+        }
+      ]
+    },
+    "bibitem": "<bibitem id=\"PubChemCID2244\" type=\"dataset\" schema-version=\"v1.5.6\">\n  <title type=\"main\">2-acetyloxybenzoic acid - PubChem, U.S. National Library of Medicine substance record</title>\n  <uri type=\"src\">https://pubchem.ncbi.nlm.nih.gov/compound/2244</uri>\n  <docidentifier type=\"pubchem\">PubChem CID 2244</docidentifier>\n  <date type=\"accessed\">\n    <on>2026-01-05</on>\n  </date>\n  <contributor>\n    <role type=\"publisher\"/>\n    <organization>\n      <name>PubChem, U.S. National Library of Medicine</name>\n    </organization>\n  </contributor>\n  <note type=\"provenance\">Retrieved from pubchem; PubChem, U.S. National Library of Medicine</note>\n  <keyword>\n    <vocab>pubchem-cid=2244</vocab>\n  </keyword>\n  <keyword>\n    <vocab>inchikey=BSYNRYMUTXBXSQ-UHFFFAOYSA-N</vocab>\n  </keyword>\n  <keyword>\n    <vocab>inchi=InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)</vocab>\n  </keyword>\n  <keyword>\n    <vocab>canonical-smiles=CC(=O)OC1=CC=CC=C1C(=O)O</vocab>\n  </keyword>\n</bibitem>",
+    "ordering": [
+      "title",
+      "uri",
+      "docidentifier",
+      "date",
+      "contributor",
+      "note",
+      "keyword"
+    ],
+    "tags": [
+      "citation",
+      "pubchem",
+      "aspirin"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "citation/common-chemistry-aspirin",
+    "substance": {
+      "type": "substance-record",
+      "preferredName": "Aspirin",
+      "formula": "C9H8O4",
+      "identifiers": [
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "50-78-2",
+            "convention": "cas"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+            "convention": "inchikey"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "CC(=O)OC1=CC=CC=C1C(=O)O",
+            "convention": "canonical-smiles"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)",
+            "convention": "inchi"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          }
+        },
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "2-acetyloxybenzoic acid",
+            "convention": "iupac-name"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          }
+        }
+      ],
+      "properties": [
+        {
+          "name": "molecular-formula",
+          "value": "C9H8O4",
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          }
+        },
+        {
+          "name": "molecular-weight",
+          "value": "180.16",
+          "provenance": {
+            "type": "provenance",
+            "source": "common_chemistry",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "attribution": "CAS Common Chemistry (CC BY-NC 4.0)"
+          },
+          "units": "g/mol"
+        }
+      ]
+    },
+    "bibitem": "<bibitem id=\"CASRN50782\" type=\"dataset\" schema-version=\"v1.5.6\">\n  <title type=\"main\">Aspirin - CAS Common Chemistry substance record</title>\n  <uri type=\"src\">https://commonchemistry.cas.org/detail?cas_rn=50-78-2</uri>\n  <docidentifier type=\"common_chemistry\">CAS RN 50-78-2</docidentifier>\n  <date type=\"accessed\">\n    <on>2026-01-05</on>\n  </date>\n  <contributor>\n    <role type=\"publisher\"/>\n    <organization>\n      <name>CAS Common Chemistry</name>\n    </organization>\n  </contributor>\n  <note type=\"provenance\">Retrieved from common_chemistry; CAS Common Chemistry (CC BY-NC 4.0)</note>\n  <keyword>\n    <vocab>cas=50-78-2</vocab>\n  </keyword>\n  <keyword>\n    <vocab>inchikey=BSYNRYMUTXBXSQ-UHFFFAOYSA-N</vocab>\n  </keyword>\n  <keyword>\n    <vocab>canonical-smiles=CC(=O)OC1=CC=CC=C1C(=O)O</vocab>\n  </keyword>\n  <keyword>\n    <vocab>inchi=InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)</vocab>\n  </keyword>\n  <keyword>\n    <vocab>iupac-name=2-acetyloxybenzoic acid</vocab>\n  </keyword>\n</bibitem>",
+    "ordering": [
+      "title",
+      "uri",
+      "docidentifier",
+      "date",
+      "contributor",
+      "note",
+      "keyword"
+    ],
+    "tags": [
+      "citation",
+      "common-chemistry",
+      "aspirin",
+      "cc-by-nc"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "citation/default-profile-provenance",
+    "substance": {
+      "type": "substance-record",
+      "identifiers": [
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "50-78-2",
+            "convention": "cas"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "example",
+            "retrievedAt": "2026-01-05T09:30:00Z",
+            "sourceVersion": "2026.11",
+            "attribution": "Example Data Source"
+          }
+        }
+      ]
+    },
+    "bibitem": "<bibitem id=\"cas50782\" type=\"dataset\" schema-version=\"v1.5.6\">\n  <title type=\"main\">50-78-2 - example substance record</title>\n  <docidentifier type=\"example\">cas: 50-78-2</docidentifier>\n  <date type=\"accessed\">\n    <on>2026-01-05</on>\n  </date>\n  <contributor>\n    <role type=\"publisher\"/>\n    <organization>\n      <name>example</name>\n    </organization>\n  </contributor>\n  <note type=\"provenance\">Retrieved from example; version 2026.11; Example Data Source</note>\n  <keyword>\n    <vocab>cas=50-78-2</vocab>\n  </keyword>\n</bibitem>",
+    "ordering": [
+      "title",
+      "docidentifier",
+      "date",
+      "contributor",
+      "note",
+      "keyword"
+    ],
+    "tags": [
+      "citation",
+      "default-profile",
+      "provenance"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "citation/default-profile-unattributed",
+    "substance": {
+      "type": "substance-record",
+      "identifiers": [
+        {
+          "identifier": {
+            "type": "identifier",
+            "value": "50-78-2",
+            "convention": "cas"
+          },
+          "provenance": {
+            "type": "provenance",
+            "source": "example",
+            "retrievedAt": "2026-01-05T09:30:00Z"
+          }
+        }
+      ]
+    },
+    "bibitem": "<bibitem id=\"cas50782\" type=\"dataset\" schema-version=\"v1.5.6\">\n  <title type=\"main\">50-78-2 - example substance record</title>\n  <docidentifier type=\"example\">cas: 50-78-2</docidentifier>\n  <date type=\"accessed\">\n    <on>2026-01-05</on>\n  </date>\n  <contributor>\n    <role type=\"publisher\"/>\n    <organization>\n      <name>example</name>\n    </organization>\n  </contributor>\n  <keyword>\n    <vocab>cas=50-78-2</vocab>\n  </keyword>\n</bibitem>",
+    "ordering": [
+      "title",
+      "docidentifier",
+      "date",
+      "contributor",
+      "keyword"
+    ],
+    "tags": [
+      "citation",
+      "default-profile",
+      "unattributed"
+    ],
+    "since": "0.11.0"
+  }
+]

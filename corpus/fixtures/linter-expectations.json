@@ -38,6 +38,7 @@
     "id": "lint/inchi-molecule-mismatch",
     "input": "H_2O @inchi(\"InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)\")",
     "parses": true,
+    "engine": "none",
     "lint": [
       { "severity": "error", "messageIncludes": "does not match molecule" },
       { "severity": "warning", "messageIncludes": "no InChI engine configured" }
@@ -52,5 +53,237 @@
     "lint": [],
     "tags": ["lint", "clean"],
     "since": "0.2.0"
+  },
+  {
+    "id": "lint/balance-group-multiplicity-clean",
+    "input": "Ca(OH)_2 + 2HCl -> CaCl_2 + 2H_2O",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "balance"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/bracket-balance-clean",
+    "input": "Ca(OH)_2",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "bracket"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/charge-balanced-clean-divalent",
+    "input": "Ca^2+ + 2Cl^- -> CaCl_2",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "charge"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/charge-imbalance-positive",
+    "input": "H^+ + OH^- -> H_2O^+",
+    "parses": true,
+    "lint": [
+      { "severity": "error", "messageIncludes": "reactants 0 vs products +1", "node": "Reaction" }
+    ],
+    "tags": ["lint", "charge"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/charge-imbalance-negative",
+    "input": "Na^+ + Cl^- -> NaCl^-",
+    "parses": true,
+    "lint": [
+      { "severity": "error", "messageIncludes": "reactants 0 vs products -1", "node": "Reaction" }
+    ],
+    "tags": ["lint", "charge"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/charge-imbalance-divalent",
+    "input": "Ca^2+ + Cl^- -> CaCl",
+    "parses": true,
+    "lint": [
+      { "severity": "error", "messageIncludes": "reactants +1 vs products 0", "node": "Reaction" }
+    ],
+    "tags": ["lint", "charge"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/element-typo-cy",
+    "input": "Cy-H",
+    "parses": true,
+    "lint": [
+      { "severity": "warning", "messageIncludes": "Unknown element", "node": "Atom(Cy)" },
+      { "severity": "info", "messageIncludes": "not in valence table", "node": "Atom(Cy)" }
+    ],
+    "tags": ["lint", "element"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/isotope-hydrogen-clean",
+    "input": "^2H",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "isotope"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/unclosed-ring",
+    "input": "C-C-C1",
+    "parses": true,
+    "lint": [
+      { "severity": "error", "messageIncludes": "unmatched ring closure", "node": "Atom(C)" }
+    ],
+    "tags": ["lint", "ring"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/ring-closure-clean",
+    "input": "C1-C-C-C-C-C1",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "ring"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/valence-unknown-element-info",
+    "input": "Xx-2Yy",
+    "parses": true,
+    "lint": [
+      { "severity": "warning", "messageIncludes": "Unknown element", "node": "Atom(Xx)" },
+      { "severity": "warning", "messageIncludes": "Unknown element", "node": "Atom(Yy)" },
+      { "severity": "info", "messageIncludes": "not in valence table", "node": "Atom(Xx)" },
+      { "severity": "info", "messageIncludes": "not in valence table", "node": "Atom(Yy)" }
+    ],
+    "tags": ["lint", "valence", "element"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/valence-clean-double-bond",
+    "input": "H-C=C-H",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "valence"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/cas-malformed-shape",
+    "input": "H_2O @cas(\"50782\")",
+    "parses": true,
+    "lint": [
+      { "severity": "error", "messageIncludes": "not in DDDDDDD-DD-D form" }
+    ],
+    "tags": ["lint", "identifier", "format"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/smiles-format-unbalanced-parens",
+    "input": "C @smiles(\"C(C\")",
+    "parses": true,
+    "lint": [
+      { "severity": "error", "messageIncludes": "parentheses are not balanced" }
+    ],
+    "tags": ["lint", "identifier", "format"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/iupac-no-validator-skip",
+    "input": "C @iupac(\"methane\")",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "identifier", "format"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/smiles-consistency-unexpected-element",
+    "input": "H_2O @smiles(\"CCO\")",
+    "parses": true,
+    "lint": [
+      { "severity": "warning", "messageIncludes": "unexpected [\"C\"]" }
+    ],
+    "tags": ["lint", "identifier", "consistency"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/smiles-consistency-missing-element",
+    "input": "C_2H_6O @smiles(\"CC\")",
+    "parses": true,
+    "lint": [
+      { "severity": "warning", "messageIncludes": "missing [\"O\"]" }
+    ],
+    "tags": ["lint", "identifier", "consistency"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/smiles-consistency-pass",
+    "input": "C_2H_6O @smiles(\"CCO\")",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "identifier", "consistency"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/smiles-consistency-aromatic-pass",
+    "input": "C_9H_8O_4 @smiles(\"CC(=O)Oc1ccccc1C(=O)O\")",
+    "parses": true,
+    "lint": [],
+    "tags": ["lint", "identifier", "consistency"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/identity-skip-no-engine",
+    "input": "C_9H_8O_4 @inchi(\"InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)\")",
+    "parses": true,
+    "engine": "none",
+    "lint": [
+      { "severity": "warning", "messageIncludes": "no InChI engine configured" }
+    ],
+    "tags": ["lint", "identity", "cross-check"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/inchi-unanalysable-no-engine",
+    "input": "H_2O @inchi(\"garbage\")",
+    "parses": true,
+    "engine": "none",
+    "lint": [
+      { "severity": "error", "messageIncludes": "must start with" },
+      { "severity": "warning", "messageIncludes": "no InChI engine configured" }
+    ],
+    "tags": ["lint", "identifier", "format", "identity"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/identity-pass-with-engine",
+    "input": "H-O-H @inchi(\"InChI=1S/H2O/h1H2\")",
+    "parses": true,
+    "engine": "inchi",
+    "lint": [],
+    "tags": ["lint", "identity", "cross-check"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/identity-drift-with-engine",
+    "input": "H-O-H @inchi(\"InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)\")",
+    "parses": true,
+    "engine": "inchi",
+    "lint": [
+      { "severity": "error", "messageIncludes": "does not match molecule" },
+      { "severity": "error", "messageIncludes": "does not match the drawn structure" }
+    ],
+    "tags": ["lint", "identity", "cross-check", "consistency"],
+    "since": "0.11.0"
+  },
+  {
+    "id": "lint/identity-non-structure-with-engine",
+    "input": "H_2O @inchi(\"InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)\")",
+    "parses": true,
+    "engine": "inchi",
+    "lint": [
+      { "severity": "error", "messageIncludes": "does not match molecule" },
+      { "severity": "warning", "messageIncludes": "cannot derive InChI" }
+    ],
+    "tags": ["lint", "identity", "cross-check", "consistency"],
+    "since": "0.11.0"
   }
 ]

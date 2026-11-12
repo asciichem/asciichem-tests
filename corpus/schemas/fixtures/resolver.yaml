@@ -1,0 +1,188 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Resolver fixtures: a recorded request/response per source and the
+# substance record the adapter must derive from it, in the canonical
+# wire form (asciichem-model v1 substance-record). The recorded
+# payloads come from the reference implementation's spec fixtures;
+# they are never edited to make an implementation pass.
+#
+# The retrieval time in every expected record is pinned
+# (2026-01-05T09:30:00Z) so records and the citation goldens that
+# consume them are stable bytes.
+#
+# Placeholder convention: the Common Chemistry key is personal and
+# never recorded — a header value of "{api-key}" means "the caller's
+# key"; the key-absent case records the request WITHOUT the X-API-KEY
+# header and the live endpoint's 401 posture (the source is skipped,
+# its cached entries keep serving).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/resolver
+title: AsciiChem resolver fixture
+type: object
+required: [id, source, convention, value, request, response, expectation]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  source:
+    enum: [pubchem, common_chemistry, opsin]
+    description: The resolver source adapter the fixture exercises.
+  convention:
+    type: string
+    description: The lookup convention (name, cas, pubchem-cid, iupac-name, ...).
+  value:
+    type: string
+    description: The lookup value.
+  request:
+    type: object
+    required: [url]
+    additionalProperties: false
+    properties:
+      url:
+        type: string
+        description: The exact request URL the adapter must build for
+          (source, convention, value), after the shared CGI.escape
+          percent-encoding table.
+      headers:
+        type: object
+        additionalProperties: { type: string }
+        description: Adapter-declared headers (the transport may add
+          its own User-Agent). "{api-key}" is the key placeholder.
+  response:
+    type: object
+    required: [status]
+    additionalProperties: false
+    properties:
+      status:
+        type: integer
+        description: The recorded HTTP status (200 recorded bodies;
+          401 for the key-absent posture, whose body is not recorded).
+      body:
+        description: The recorded response body — object for the JSON
+          sources, string for OPSIN's SMILES body (adapters strip it).
+        oneOf:
+          - type: object
+          - type: string
+          - type: "null"
+  expectation:
+    type: object
+    required: [substance]
+    additionalProperties: false
+    properties:
+      substance:
+        oneOf:
+          - type: "null"
+            description: The source answers no record (skipped).
+          - type: object
+            required: [type, identifiers]
+            additionalProperties: false
+            properties:
+              type:
+                const: substance-record
+              preferredName:
+                type: string
+              synonyms:
+                type: array
+                items: { type: string }
+              formula:
+                type: string
+              molecularWeight:
+                type: number
+              identifiers:
+                type: array
+                minItems: 1
+                items:
+                  type: object
+                  required: [identifier, provenance]
+                  additionalProperties: false
+                  properties:
+                    identifier:
+                      type: object
+                      required: [type, value, convention]
+                      additionalProperties: false
+                      properties:
+                        type:
+                          const: identifier
+                        value:
+                          type: string
+                        convention:
+                          type: string
+                    provenance:
+                      type: object
+                      required: [type, source, retrievedAt]
+                      additionalProperties: false
+                      properties:
+                        type:
+                          const: provenance
+                        source:
+                          type: string
+                        retrievedAt:
+                          type: string
+                        sourceVersion:
+                          type: string
+                        attribution:
+                          type: string
+                  description: Identifier order is load-bearing — the
+                    citation bibitem's keywords follow it.
+              properties:
+                type: array
+                items:
+                  type: object
+                  required: [name, value, provenance]
+                  additionalProperties: false
+                  properties:
+                    name:
+                      type: string
+                    value:
+                      type: string
+                    units:
+                      type: string
+                    provenance:
+                      type: object
+                      required: [type, source, retrievedAt]
+                      additionalProperties: false
+                      properties:
+                        type:
+                          const: provenance
+                        source:
+                          type: string
+                        retrievedAt:
+                          type: string
+                        sourceVersion:
+                          type: string
+                        attribution:
+                          type: string
+            description: The wire substance record the adapter must
+              produce from the recorded body, compared semantically.
+      structureParses:
+        type: boolean
+        description: >-
+          Whether the source's SMILES parses within the supported
+          subset (structure attached) or stays identifier-only (no
+          silent loss).
+      outcome:
+        enum: [resolved, skipped]
+        description: resolved = the source answers; skipped = the
+          recorded status yields no record (key-absent 401).
+      cache:
+        type: object
+        required: [ttlSeconds, keyFormula, servesOffline]
+        additionalProperties: false
+        properties:
+          ttlSeconds:
+            type: integer
+            description: The cache entry's time-to-live (both shipped
+              implementations use 7 days).
+          keyFormula:
+            type: string
+            description: The cache key derivation, e.g.
+              'sha256("source:convention:value")'.
+          servesOffline:
+            type: boolean
+            description: A seeded entry serves without re-fetching
+              (and without a key, for key-gated sources).

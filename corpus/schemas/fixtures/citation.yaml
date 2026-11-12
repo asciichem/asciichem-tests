@@ -1,0 +1,123 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# Citation goldens: a resolved substance record (wire form, retrieval
+# time pinned) and the dataset-type bibitem bytes the citation layer
+# must emit for it. Byte-equal — these were captured from the Ruby
+# reference implementation (AsciiChem::Citation.to_xml) with
+# retrievedAt pinned to 2026-01-05T09:30:00Z; the Rust port asserts
+# the same bytes.
+#
+# Element ordering (the `ordering` field) is load-bearing: title,
+# uri, docidentifier, date, contributor, note, keyword — the shape the
+# metanorma plugin reads (docidentifier type=<source>, the accessed
+# date, the keyword vocab entries, the provenance note). The
+# schema-version attribute tracks the relaton line that produced the
+# capture; re-recording a golden rides the reference, never an
+# implementation.
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/citation
+title: AsciiChem citation golden fixture
+type: object
+required: [id, substance, bibitem]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  substance:
+    type: object
+    required: [type, identifiers]
+    additionalProperties: false
+    properties:
+      type:
+        const: substance-record
+      preferredName:
+        type: string
+      synonyms:
+        type: array
+        items: { type: string }
+      formula:
+        type: string
+      molecularWeight:
+        type: number
+      identifiers:
+        type: array
+        minItems: 1
+        items:
+          type: object
+          required: [identifier, provenance]
+          additionalProperties: false
+          properties:
+            identifier:
+              type: object
+              required: [type, value, convention]
+              additionalProperties: false
+              properties:
+                type:
+                  const: identifier
+                value:
+                  type: string
+                convention:
+                  type: string
+            provenance:
+              type: object
+              required: [type, source, retrievedAt]
+              additionalProperties: false
+              properties:
+                type:
+                  const: provenance
+                source:
+                  type: string
+                retrievedAt:
+                  type: string
+                sourceVersion:
+                  type: string
+                attribution:
+                  type: string
+        description: Identifier order is the bibitem keyword order.
+      properties:
+        type: array
+        items:
+          type: object
+          required: [name, value, provenance]
+          additionalProperties: false
+          properties:
+            name:
+              type: string
+            value:
+              type: string
+            units:
+              type: string
+            provenance:
+              type: object
+              required: [type, source, retrievedAt]
+              additionalProperties: false
+              properties:
+                type:
+                  const: provenance
+                source:
+                  type: string
+                retrievedAt:
+                  type: string
+                sourceVersion:
+                  type: string
+                attribution:
+                  type: string
+  bibitem:
+    type: string
+    description: The expected bibitem XML bytes, byte-equal (no
+      trailing newline).
+  ordering:
+    type: array
+    items:
+      type: string
+    description: The bibitem's child elements in emission order.
+  rejected:
+    type: boolean
+    description: >-
+      When true the substance must be rejected (a substance without
+      provenance is not citable — resolve it first).

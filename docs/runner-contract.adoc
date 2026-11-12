@@ -34,11 +34,74 @@ fixture logic of its own.
     `bonds`): V2000 parse must agree on parse/reject, atom and bond
     counts, and — for `molfileRoundTrip` — survive a
     parse/write/parse cycle with the same graph.
+. **Linter fixtures** (`linter-expectations.json`; key `lint`):
+  * Match semantics: every expectation must match at least one actual
+    diagnostic (same severity, message containing `messageIncludes`,
+    and — when given — the same `node` label) AND every actual
+    diagnostic must match at least one expectation. `lint: []`
+    demands a completely clean run.
+  * Node labels are pinned only where implementations agree
+    (`Atom(C)`, `Reaction`, `Crystal(x)`). Molecule-level labels are
+    implementation-local (the reference prints `Molecule`; the Rust
+    port prints the hill formula), so molecule-level expectations
+    omit `node`.
+  * Engine posture (`engine`): the identity cross-check is
+    engine-scaled. `engine: "none"` cases encode the no-engine
+    posture (the cross-check's skip warning); `engine: "inchi"` cases
+    encode the with-engine posture (the cross-check deriving the drawn
+    structure's InChI and comparing). A runner whose posture differs
+    from the marker **skips the case and reports the skip** — a
+    missing engine is a posture, not a failure. An implementation
+    claiming the `linter` level must run every engine-independent
+    case (no `engine` key) plus all cases matching its posture.
+  * `pending` lists implementations that cannot run the case yet;
+    those implementations skip and report, never fail silently.
+. **Resolver fixtures** (`resolver.json`): the runner replays the
+  recorded request/response through the named source adapter — the
+  adapter must build exactly `request.url` for `(source, convention,
+  value)` (shared `CGI.escape` percent-encoding table) and send the
+  adapter-declared `request.headers` (the transport may add its own
+  User-Agent; `{api-key}` is the caller's key placeholder). Feeding
+  `response.body` must yield semantically the `expectation.substance`
+  wire record — every identifier and property carrying its provenance
+  with the pinned `retrievedAt` — plus `structureParses` (source
+  SMILES within the supported subset → structure attached; otherwise
+  identifier-only, no silent loss). The cache markers pin the shared
+  caching contract: `ttlSeconds`, `keyFormula`
+  (`sha256("source:convention:value")`), `servesOffline` (a seeded
+  entry answers without re-fetching — and without a key, for key-gated
+  sources). A `skipped` outcome (e.g. the key-absent 401) must drop
+  the source without poisoning the others.
+. **Citation fixtures** (`citation.json`): for `substance` (the wire
+  record, `retrievedAt` pinned) the citation layer must emit exactly
+  the `bibitem` bytes — **byte-equal**, no trailing newline. The
+  `ordering` field documents the bibitem's child-element order; the
+  identifier order in `substance` is the keyword order. A case with
+  `rejected: true` must be rejected (a substance without provenance
+  is not citable). The goldens were captured from the reference
+  implementation; a wire-shape change (e.g. a relaton major line)
+  re-records them against the reference in a corpus PR — never
+  per-implementation.
+. **CLI fixtures** (`cli.json`): each case runs `invocation` (the argv
+  after the program name) against the implementation's CLI dispatch
+  and asserts `exit` plus the stdout/stderr matchers: `stdout` exact
+  (with `{version}` standing for the implementation's own version),
+  `stdoutIncludes` (every entry appears), `stdoutJson` (semantic
+  equality with the parsed stdout JSON — key order cannot fail a
+  case), `stderrIncludes` (every entry appears in stderr). Exactly one
+  stdout matcher per case. The corpus covers the offline command set
+  (convert with formats, validate, lint, roundtrip, parse-cml,
+  version, tree); resolve/cite/identity need network or an engine and
+  stay implementation-tested. `pending` lists implementations missing
+  a command behaviour (e.g. the Rust core ships no html/latex
+  renderer): they skip and report.
 . **Levels**: a run claims the levels it exercised:
   L0 parse/serialise, L1 Text round-trip, L2 MathML golden,
-  L3 CML round-trip, L4 linter diagnostics, L5 SVG (optional).
+  L3 CML round-trip, L4 linter diagnostics, L5 SVG (optional), plus
+  the parity families: `resolver`, `citation`, `cli`.
   A level is only claimed when every fixture tagged for that level
-  was executed.
+  was executed (posture-marked and `pending` cases count as executed
+  when correctly skipped-and-reported).
 . **Emit** `conformance.json` per `corpus/schemas/conformance.schema.json`,
   with the corpus version (git tag of this repo) recorded.
 . **Never modify fixtures to pass.** A fixture disagreement is either
@@ -51,3 +114,7 @@ fixture logic of its own.
 - `text` goldens: compare after trailing-whitespace trim.
 - `mathml`/`cml` goldens: byte-equal (implementations must be
   deterministic — already a spec'd invariant of the reference gem).
+- `citation` goldens: byte-equal, no trailing newline.
+- `resolver` substance records: compared semantically against the
+  asciichem-model v1 substance-record schema.
+- `cli` `stdoutJson`: compared as parsed JSON (semantic equality).

@@ -87,6 +87,26 @@ The identity (InChI oracle) family lives in its own suite:
 extracted 2026-10-22 so the InChI engines (reference + Rust) gate on
 it directly.
 
+== Parity families (corpus 0.11.0)
+
+Beyond parsing, the corpus closes the parity loop between
+implementations with three recorded families and one extended one:
+
+- `resolver.json` — recorded request/response per source (PubChem,
+  CAS Common Chemistry, OPSIN) with the expected wire substance
+  record, provenance (CC BY-NC attribution included), and the TTL
+  cache contract.
+- `citation.json` — byte-goldens of the dataset-type bibitems the
+  citation layer emits for resolved substances (captured from the
+  reference, retrieval time pinned).
+- `cli.json` — invocation -> stdout -> exit-code triples for the
+  offline command set.
+- `linter-expectations.json` — gained the `engine` posture marker
+  (the identity cross-check is engine-scaled: no-engine skip warning
+  vs with-engine pass/drift) and `pending` annotations for
+  implementation gaps. See `docs/runner-contract.adoc` for the
+  consumption rules.
+
 Every runner emits `conformance.json` (see the schema): the
 implementation name/version, the corpus version it ran, and
 per-level pass/total. CI publishes it; the spec site renders the
