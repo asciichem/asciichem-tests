@@ -21,3 +21,10 @@ properties:
     type: boolean
   cmlRoundTrip:
     type: boolean
+  pending:
+    type: array
+    items: { type: string }
+    description: >-
+      Implementation ids that cannot run the case yet (they skip and
+      report, never fail silently on it) — the same contract the
+      linter-expectations fixtures define.
