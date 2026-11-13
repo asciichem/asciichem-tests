@@ -251,5 +251,140 @@
       "round-trip"
     ],
     "since": "0.1.0"
+  },
+  {
+    "id": "cml/mechanism-flows",
+    "input": "mechanism{\n  s1: A-B -> A + B | flow: A-B > A; B > B-C\n  s2: A + C -> A-C\n}",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "cml/mechanism-spectator",
+    "input": "mechanism{\n  s1: A -> B\n  spectator: C\n}",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "mechanism"
+    ]
+  },
+  {
+    "id": "cml/crystal-full",
+    "input": "crystal[NaCl](a=5.64,b=5.64,c=5.64,alpha=90,beta=90,gamma=90,sg=Fm-3m){Na@f(0,0,0) Cl@f(0.5,0.5,0.5)}",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "crystal"
+    ]
+  },
+  {
+    "id": "cml/spectrum-peaks",
+    "input": "spectrum[1H](solvent=CDCl3){\n  7.26: 1 s \"CHCl3\"\n}",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "spectrum"
+    ]
+  },
+  {
+    "id": "cml/calc-properties",
+    "input": "calc(B3LYP/6-31G*){\n  energy: -76.0 Hartree\n}",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "calc"
+    ]
+  },
+  {
+    "id": "cml/zmatrix-rows",
+    "input": "zmatrix{\n  O\n  H  1  0.96\n  H  1  0.96  2  104.5\n}",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "zmatrix"
+    ]
+  },
+  {
+    "id": "cml/conditions-both-sides",
+    "input": "H_2 + O_2 ->[Fe][400C] H_2O",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "conditions"
+    ]
+  },
+  {
+    "id": "cml/conditions-typed-catalyst",
+    "input": "A ->[cat: Pd] B",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "conditions"
+    ]
+  },
+  {
+    "id": "cml/conditions-cascade",
+    "input": "A ->[c1] B ->[c2] C",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "pending": [
+      "asciichem-rs"
+    ],
+    "since": "0.11.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "conditions"
+    ]
   }
 ]
