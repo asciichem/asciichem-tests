@@ -95,10 +95,29 @@ fixture logic of its own.
   stay implementation-tested. `pending` lists implementations missing
   a command behaviour (e.g. the Rust core ships no html/latex
   renderer): they skip and report.
+. **RInChI fixtures** (`rinchi.json`): each case carries the recorded
+  input edge (`rxnfile` xor `rdfile`), the five oracle lines
+  (`rinchi`, `rauxinfo`, and the keys — `rinchikey`/`longKey`/`webKey`
+  recorded *headerless*, so the runner re-strips
+  `Short-RInChIKey=`/`Long-RInChIKey=`/`Web-RInChIKey=` before
+  comparing), and the reaction's per-role `components` (plain
+  identifier strings, sorted within a role). Derive: the input edge
+  must assemble the five lines byte-identically; `forceEquilibrium`
+  cases are read with the forced equilibrium reading (the RXNfile
+  itself parses directional). Decode: `rinchi` (+`rauxinfo`) must read
+  back into the recorded components — in role order for the
+  directional readings (the direction flag recovers the real roles,
+  and the re-encoded identifier's flag pins that recovery
+  byte-exactly), order-free for the `forceEquilibrium` cases (an
+  equilibrium is symmetric; either group may output first) — and
+  decode∘derive must reproduce the oracle bytes, which carries every
+  component's aux/key content. This family needs an InChI engine that
+  ships the reaction-identity surface; implementations without one
+  skip and report.
 . **Levels**: a run claims the levels it exercised:
   L0 parse/serialise, L1 Text round-trip, L2 MathML golden,
   L3 CML round-trip, L4 linter diagnostics, L5 SVG (optional), plus
-  the parity families: `resolver`, `citation`, `cli`.
+  the parity families: `resolver`, `citation`, `cli`, `rinchi`.
   A level is only claimed when every fixture tagged for that level
   was executed (posture-marked and `pending` cases count as executed
   when correctly skipped-and-reported).

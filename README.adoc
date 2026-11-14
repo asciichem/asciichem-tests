@@ -106,6 +106,17 @@ implementations with three recorded families and one extended one:
   vs with-engine pass/drift) and `pending` annotations for
   implementation gaps. See `docs/runner-contract.adoc` for the
   consumption rules.
+- `rinchi.json` — the reaction-identity family: each case carries the
+  recorded input edge (RXNfile or RDfile), the five oracle lines
+  (identifier, RAuxInfo, the three RInChIKey shapes — keys
+  headerless), and the decoded reaction's per-role components in wire
+  order. Sourced from the
+  https://github.com/chemomer/inchi-tests[inchi-tests] RInChI
+  tranche's recorded oracle bytes; the equilibrium family is recorded
+  under the forced reading (`forceEquilibrium`). Derive cases gate
+  RXNfile/RDfile -> the five lines byte-identically; decode cases gate
+  RInChI (+RAuxInfo) -> the role-resolved components plus the
+  decode∘derive round trip.
 
 Every runner emits `conformance.json` (see the schema): the
 implementation name/version, the corpus version it ran, and

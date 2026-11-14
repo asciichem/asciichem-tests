@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+# RInChI reaction-identity cases — the derive and decode directions
+# over the recorded oracle bytes (sourced from
+# chemomer/inchi-tests' gated RInChI tranche, v0.3.41).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/rinchi
+title: AsciiChem RInChI fixture
+type: object
+required: [id, rinchi, rauxinfo, rinchikey, longKey, webKey, components]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  rxnfile:
+    type: string
+    description: the V2000 RXNfile input edge (derive direction; xor rdfile).
+  rdfile:
+    type: string
+    description: the MDL RDfile input edge, the `$DATUM $MFMT` agent scan (derive direction; xor rxnfile).
+  forceEquilibrium:
+    type: boolean
+    description: >-
+      the recorded reading is the forced equilibrium one (the reference
+      CLI's /force-equilibrium) — the RXNfile itself parses directional.
+  rinchi:
+    type: string
+  rauxinfo:
+    type: string
+  rinchikey:
+    type: string
+    description: the short (hashed) RInChIKey, headerless (the corpus convention).
+  longKey:
+    type: string
+    description: the long RInChIKey, headerless.
+  webKey:
+    type: string
+    description: the web RInChIKey, headerless.
+  components:
+    type: object
+    description: >-
+      the reaction's per-role component identifiers (reactants /
+      products / agents per the drawn input edge), sorted within a
+      role — the identifier grammar's wire order. No structures are
+      rebuilt on decode; the per-component aux and key content rides
+      the rauxinfo/keys bytes through the decode∘derive round trip.
+      The direction flag recovers the real roles for the directional
+      readings; a forced equilibrium recording is symmetric, so its
+      decoded role assignment is order-free (the runner compares the
+      flattened set and lets the round trip pin the flag).
+    required: [reactants, products, agents]
+    additionalProperties: false
+    properties:
+      reactants:
+        type: array
+        items: { type: string }
+      products:
+        type: array
+        items: { type: string }
+      agents:
+        type: array
+        items: { type: string }
