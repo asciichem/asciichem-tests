@@ -260,5 +260,29 @@
       "coefficient"
     ],
     "since": "0.4.0"
+  },
+  {
+    "id": "format/mathml/mechanism-flows",
+    "input": "mechanism{\n  s1: A-B -> A + B | flow: A-B > A; B > B-C\n  s2: A + C -> A-C\n}",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">mechanism</mi>\n      <mtable>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">s1</mi>\n          </mtd>\n          <mtd>\n            <mtext>A-B -&gt; A + B</mtext>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">s2</mi>\n          </mtd>\n          <mtd>\n            <mtext>A + C -&gt; A-C</mtext>\n          </mtd>\n        </mtr>\n      </mtable>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "mechanism",
+      "electron-flow"
+    ],
+    "since": "0.11.0"
+  },
+  {
+    "id": "format/mathml/crystal-cell",
+    "input": "crystal[NaCl](a=5.64,b=5.64,c=5.64,alpha=90,beta=90,gamma=90,sg=Fm-3m){Na@f(0,0,0) Cl@f(0.5,0.5,0.5)}",
+    "parses": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">crystal</mi>\n      <mrow>\n        <mo>[</mo>\n        <mtext>NaCl</mtext>\n        <mo>]</mo>\n      </mrow>\n      <mtable>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">a</mi>\n          </mtd>\n          <mtd>\n            <mn>5.64</mn>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">b</mi>\n          </mtd>\n          <mtd>\n            <mn>5.64</mn>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">c</mi>\n          </mtd>\n          <mtd>\n            <mn>5.64</mn>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">α</mi>\n          </mtd>\n          <mtd>\n            <mn>90</mn>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">β</mi>\n          </mtd>\n          <mtd>\n            <mn>90</mn>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mi mathvariant=\"normal\">γ</mi>\n          </mtd>\n          <mtd>\n            <mn>90</mn>\n          </mtd>\n        </mtr>\n      </mtable>\n      <mtable>\n        <mtr>\n          <mtd>\n            <mn>1</mn>\n          </mtd>\n          <mtd>\n            <mi mathvariant=\"normal\">Na</mi>\n          </mtd>\n        </mtr>\n        <mtr>\n          <mtd>\n            <mn>2</mn>\n          </mtd>\n          <mtd>\n            <mi mathvariant=\"normal\">Cl</mi>\n          </mtd>\n        </mtr>\n      </mtable>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "mathml",
+      "crystal"
+    ],
+    "since": "0.11.0"
   }
 ]
