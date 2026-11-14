@@ -18,5 +18,25 @@
   { "id": "reject/empty", "input": "", "parses": false, "tags": ["reject"], "since": "0.1.0" },
   { "id": "reject/at-signs", "input": "@@@", "parses": false, "tags": ["reject"], "since": "0.1.0" },
   { "id": "reject/arrow-only", "input": "->", "parses": false, "tags": ["reject"], "since": "0.1.0" },
-  { "id": "reject/dangling-caret", "input": "H^", "parses": false, "tags": ["reject"], "since": "0.1.0" }
+  { "id": "reject/dangling-caret", "input": "H^", "parses": false, "tags": ["reject"], "since": "0.1.0" },
+{
+  "id": "reject/annotation-iupac-narrowed",
+  "input": "C @iupac(\"methane\")",
+  "parses": false,
+  "tags": [
+    "reject",
+    "annotation"
+  ],
+  "since": "0.11.0"
+},
+{
+  "id": "reject/annotation-cid-narrowed",
+  "input": "C @cid(\"1234\")",
+  "parses": false,
+  "tags": [
+    "reject",
+    "annotation"
+  ],
+  "since": "0.11.0"
+}
 ]
