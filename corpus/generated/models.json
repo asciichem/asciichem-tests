@@ -14288,6 +14288,35 @@
         ]
       },
       "text": "F@TH2-H^2+#O^2+-C"
+    },
+    {
+      "wire": {
+        "type": "formula",
+        "nodes": [
+          {
+            "type": "crystal",
+            "name": "NaCl",
+            "a": 5.64,
+            "b": 5.64,
+            "c": 5.64,
+            "alpha": 90.0,
+            "beta": 90.0,
+            "gamma": 90.0,
+            "spacegroup": "Fm-3m",
+            "atoms": [
+              {
+                "type": "atom",
+                "element": "Na"
+              },
+              {
+                "type": "atom",
+                "element": "Cl"
+              }
+            ]
+          }
+        ]
+      },
+      "text": "crystal[NaCl](a=5.64,b=5.64,c=5.64,alpha=90,beta=90,gamma=90,sg=Fm-3m){Na Cl}"
     }
   ]
 }
