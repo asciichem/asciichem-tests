@@ -41,6 +41,7 @@ suites:
   - resolver
   - citation
   - cli
+  - rinchi
 levels:
   parse/reject: every case parses or rejects exactly as marked
   L0: emission validates against the asciichem-model v1 JSON Schemas
@@ -54,3 +55,5 @@ levels:
   citation: byte-identical dataset bibitem goldens
   cli: invocation -> stdout -> exit-code contract for the offline
     command set
+  rinchi: reaction identity derives and decodes byte-identically (the
+    RInChI oracle lines + the decode∘derive round trip)
