@@ -7,7 +7,8 @@
       "chain"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
   },
   {
     "id": "structure/smiles/propane",
@@ -17,7 +18,8 @@
       "chain"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C3H8/c1-3-2/h3H2,1-2H3"
   },
   {
     "id": "structure/smiles/isopropanol",
@@ -27,7 +29,8 @@
       "branch"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
   },
   {
     "id": "structure/smiles/tert-butanol",
@@ -37,7 +40,8 @@
       "branch"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C5H12/c1-5(2,3)4/h1-4H3"
   },
   {
     "id": "structure/smiles/neopentane",
@@ -47,7 +51,8 @@
       "branch"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C6H15/c1-6(2,3,4)5/h1-5H3"
   },
   {
     "id": "structure/smiles/cyclohexane",
@@ -57,7 +62,8 @@
       "ring"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C6H12/c1-2-4-6-5-3-1/h1-6H2"
   },
   {
     "id": "structure/smiles/benzene-aromatic",
@@ -68,7 +74,8 @@
       "aromatic"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
   },
   {
     "id": "structure/smiles/benzene-kekule",
@@ -80,7 +87,8 @@
     ],
     "since": "0.3.0",
     "smilesRoundTrip": false,
-    "canonicalSmiles": "c1ccccc1"
+    "canonicalSmiles": "c1ccccc1",
+    "inchi": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
   },
   {
     "id": "structure/smiles/naphthalene",
@@ -92,7 +100,8 @@
       "aromatic"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C10H8/c1-2-6-10-8-4-3-7-9(10)5-1/h1-8H"
   },
   {
     "id": "structure/smiles/aspirin",
@@ -104,7 +113,8 @@
     ],
     "since": "0.3.0",
     "smilesRoundTrip": false,
-    "canonicalSmiles": "CC(=O)Oc1ccccc1C(=O)O"
+    "canonicalSmiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)"
   },
   {
     "id": "structure/smiles/phenol",
@@ -114,7 +124,8 @@
       "aromatic"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C6H6O/c7-6-4-2-1-3-5-6/h1-5,7H"
   },
   {
     "id": "structure/smiles/biphenyl",
@@ -124,7 +135,8 @@
       "aromatic"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": false
+    "smilesRoundTrip": false,
+    "inchi": "InChI=1S/C12H10/c1-3-7-11(8-4-1)12-9-5-2-6-10-12/h1-10H"
   },
   {
     "id": "structure/smiles/nitrogen",
@@ -135,7 +147,8 @@
       "triple"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/N2/c1-2"
   },
   {
     "id": "structure/smiles/acetic-acid",
@@ -146,7 +159,8 @@
       "double"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)"
   },
   {
     "id": "structure/smiles/water",
@@ -156,7 +170,8 @@
       "single-atom"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/H2O/h1H2"
   },
   {
     "id": "structure/smiles/ammonium",
@@ -167,7 +182,8 @@
       "charge"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/H3N/h1H3/p+1"
   },
   {
     "id": "structure/smiles/hydroxide",
@@ -178,7 +194,8 @@
       "charge"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/H2O/h1H2/p-1"
   },
   {
     "id": "structure/smiles/ferric",
@@ -189,7 +206,8 @@
       "charge"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/Fe/q+3"
   },
   {
     "id": "structure/smiles/ferric-plusplus",
@@ -200,7 +218,8 @@
       "charge"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/Fe/q+2"
   },
   {
     "id": "structure/smiles/methane-d4",
@@ -211,7 +230,8 @@
       "isotope"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/CH4/h1H4/i1D4"
   },
   {
     "id": "structure/smiles/c14",
@@ -222,7 +242,8 @@
       "isotope"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/CH4/h1H4/i1+1"
   },
   {
     "id": "structure/smiles/aromatic-nh",
@@ -244,7 +265,8 @@
       "big"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C11H22/c1-2-4-6-8-10-11-9-7-5-3-1/h1-11H2"
   },
   {
     "id": "structure/smiles/mixture",
@@ -264,7 +286,8 @@
       "bond"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": false
+    "smilesRoundTrip": false,
+    "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
   },
   {
     "id": "structure/smiles/aromatic-bond-symbol",
@@ -274,7 +297,8 @@
       "aromatic"
     ],
     "since": "0.3.0",
-    "smilesRoundTrip": false
+    "smilesRoundTrip": false,
+    "inchi": "InChI=1S/C5H5/c1-2-4-5-3-1/h1-5H"
   },
   {
     "id": "structure/smiles/reject-unclosed-ring",
@@ -368,7 +392,8 @@
     "tags": [
       "branch"
     ],
-    "since": "0.3.0"
+    "since": "0.3.0",
+    "inchi": "InChI=1S/C3H8O/c1-3(2)4/h3-4H,1-2H3"
   },
   {
     "id": "structure/smiles/ferric-plusplus-alt",
@@ -419,6 +444,7 @@
       "writer-stability"
     ],
     "since": "0.6.0",
-    "smilesRoundTrip": true
+    "smilesRoundTrip": true,
+    "inchi": "InChI=1S/C8H14/c1-7-5-3-4-6-8(7)2/h3-4,7-8H,5-6H2,1-2H3"
   }
 ]
