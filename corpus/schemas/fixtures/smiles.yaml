@@ -28,3 +28,15 @@ properties:
       Deterministic writer output for this input when it differs from
       the input spelling (canonical aromatic form). Implementations
       must produce exactly this string.
+  inchi:
+    type: string
+    description: >-
+      The recorded InChI for this structure (scripts/record-smiles-identity.rb:
+      three recording legs — the chemomer engine's SMILES reader, the
+      gem parse piped through the molfile writer into the same engine,
+      and the official inchi-1 binary — must agree). Present only on
+      the recorded intersection: cases outside the engine's phase-1
+      SMILES (chirality, E/Z, dot-disconnection, the ++ charge
+      spelling) and transcription refusals carry no column. An
+      identity-capable runtime deriving from this SMILES must produce
+      exactly this string.
