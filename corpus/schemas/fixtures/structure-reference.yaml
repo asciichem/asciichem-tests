@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=https://json-schema.org/draft-2020-12/schema
+# Structure-reference cases (the standalone @smiles ingest edge).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/structure-reference
+title: AsciiChem structure-reference fixture
+type: object
+required: [id, input, parses]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+    description: the standalone reference text (`@smiles("...")`).
+  parses:
+    type: boolean
+  smiles:
+    type: string
+    description: >-
+      the reference's source SMILES — the same structure the identity
+      gates derive from.
+  text:
+    type: string
+    description: >-
+      the canonical text output recorded from the reference (the
+      ingest-edge posture: the reference syntax is not preserved; the
+      Text formatter canonicalises the ingested structure to ascii).
+      Implementations must produce exactly this string.
+  inchi:
+    type: string
+    description: >-
+      the recorded InChI for the referenced structure
+      (scripts/record-structure-references.rb: the three recording
+      legs must agree). An identity-capable runtime deriving from the
+      reference must produce exactly this string.
