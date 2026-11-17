@@ -20,6 +20,7 @@
       "ring-aromatic"
     ],
     "since": "0.13.0",
+    "text": "C1=C-C=C-C=C1",
     "inchi": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
   },
   {
