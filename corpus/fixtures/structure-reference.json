@@ -1,0 +1,95 @@
+[
+  {
+    "id": "structure-reference/ethanol",
+    "input": "@smiles(\"CCO\")",
+    "parses": true,
+    "smiles": "CCO",
+    "tags": [
+      "simple"
+    ],
+    "since": "0.13.0",
+    "text": "C-C-O",
+    "inchi": "InChI=1S/C2H6O/c1-2-3/h3H,2H2,1H3"
+  },
+  {
+    "id": "structure-reference/benzene",
+    "input": "@smiles(\"c1ccccc1\")",
+    "parses": true,
+    "smiles": "c1ccccc1",
+    "tags": [
+      "ring-aromatic"
+    ],
+    "since": "0.13.0",
+    "inchi": "InChI=1S/C6H6/c1-2-4-6-5-3-1/h1-6H"
+  },
+  {
+    "id": "structure-reference/pyrrole",
+    "input": "@smiles(\"c1cc[nH]c1\")",
+    "parses": true,
+    "smiles": "c1cc[nH]c1",
+    "tags": [
+      "bracket-h"
+    ],
+    "since": "0.13.0",
+    "inchi": "InChI=1S/C4H5N/c1-2-4-5-3-1/h1-5H"
+  },
+  {
+    "id": "structure-reference/aspirin",
+    "input": "@smiles(\"CC(=O)OC1=CC=CC=C1C(=O)O\")",
+    "parses": true,
+    "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+    "tags": [
+      "drug"
+    ],
+    "since": "0.13.0",
+    "inchi": "InChI=1S/C9H8O4/c1-6(10)13-8-5-3-2-4-7(8)9(11)12/h2-5H,1H3,(H,11,12)"
+  },
+  {
+    "id": "structure-reference/caffeine",
+    "input": "@smiles(\"Cn1cnc2c1c(=O)n(C)c(=O)n2C\")",
+    "parses": true,
+    "smiles": "Cn1cnc2c1c(=O)n(C)c(=O)n2C",
+    "tags": [
+      "drug-fused"
+    ],
+    "since": "0.13.0",
+    "inchi": "InChI=1S/C8H10N4O2/c1-10-4-9-6-5(10)7(13)12(3)8(14)11(6)2/h4H,1-3H3"
+  },
+  {
+    "id": "structure-reference/l-alanine",
+    "input": "@smiles(\"N[C@@H](C)C(=O)O\")",
+    "parses": true,
+    "smiles": "N[C@@H](C)C(=O)O",
+    "tags": [
+      "stereo"
+    ],
+    "since": "0.13.0"
+  },
+  {
+    "id": "structure-reference/molfile-source",
+    "input": "@molfile(\"CCO\")",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.13.0"
+  },
+  {
+    "id": "structure-reference/dot-components",
+    "input": "@smiles(\"CC.O\")",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.13.0"
+  },
+  {
+    "id": "structure-reference/truncated",
+    "input": "@smiles(\"CCO\"",
+    "parses": false,
+    "tags": [
+      "reject"
+    ],
+    "since": "0.13.0"
+  }
+]
