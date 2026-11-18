@@ -339,7 +339,8 @@
       "accept",
       "stereo"
     ],
-    "since": "0.5.0"
+    "since": "0.5.0",
+    "inchi": "InChI=1S/C4H8/c1-3-4-2/h3-4H,1-2H3/b4-3+"
   },
   {
     "id": "structure/smiles/reject-bonded-ring-closure",
@@ -438,7 +439,8 @@
       "accept",
       "stereo"
     ],
-    "since": "0.5.0"
+    "since": "0.5.0",
+    "inchi": "InChI=1S/C2H2F2/c3-1-2-4/h1-2H/b2-1-"
   },
   {
     "id": "structure/smiles/ring-closure-branch",
