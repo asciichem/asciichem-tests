@@ -38,5 +38,12 @@
     "annotation"
   ],
   "since": "0.11.0"
-}
+},
+  { "id": "state/precipitate", "input": "AgCl v", "parses": true, "roundTrip": true, "tags": ["state"], "since": "0.17.0" },
+  { "id": "state/gas", "input": "AgCl ^", "parses": true, "roundTrip": true, "tags": ["state"], "since": "0.17.0" },
+  { "id": "state/in-reaction", "input": "Ag^+ + Cl^- -> AgCl v", "parses": true, "roundTrip": true, "tags": ["state", "reaction"], "since": "0.17.0" },
+  { "id": "state/cascade", "input": "CaCO_3 ->[heat] CaO + CO_2 ^", "parses": true, "roundTrip": true, "tags": ["state", "reaction"], "since": "0.17.0" },
+  { "id": "state/not-vanadium", "input": "AgCl V", "parses": true, "roundTrip": true, "tags": ["state", "disambiguation"], "since": "0.17.0" },
+  { "id": "state/tight-forms-unchanged", "input": "AgCl^14C", "parses": true, "roundTrip": true, "tags": ["state", "disambiguation"], "since": "0.17.0" },
+  { "id": "reject/state-tight-charge", "input": "Ca ^2+", "parses": false, "tags": ["reject", "state", "disambiguation"], "since": "0.17.0" }
 ]

@@ -359,5 +359,42 @@
       "round-trip",
       "conditions"
     ]
+  },
+  {
+    "id": "cml/state-precipitate",
+    "input": "AgCl v",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.17.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "state"
+    ]
+  },
+  {
+    "id": "cml/state-gas",
+    "input": "AgCl ^",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.17.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "state"
+    ]
+  },
+  {
+    "id": "cml/state-in-reaction",
+    "input": "CaCO_3 ->[heat] CaO + CO_2 ^",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.17.0",
+    "tags": [
+      "cml",
+      "round-trip",
+      "state",
+      "reaction"
+    ]
   }
 ]
