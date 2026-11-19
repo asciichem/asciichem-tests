@@ -286,5 +286,6 @@
     "since": "0.11.0"
   },
   { "id": "format/mathml/state-precipitate", "input": "AgCl v", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>\u2193</mo>\n    </mrow>\n  </mrow>\n</math>\n" },
-  { "id": "format/mathml/state-gas", "input": "AgCl ^", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>\u2191</mo>\n    </mrow>\n  </mrow>\n</math>\n" }
+  { "id": "format/mathml/state-gas", "input": "AgCl ^", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>\u2191</mo>\n    </mrow>\n  </mrow>\n</math>\n" },
+  { "id": "format/mathml/atomic-number", "input": "^227_90Th", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">Th</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <mn>90</mn>\n        <mn>227</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n" }
 ]

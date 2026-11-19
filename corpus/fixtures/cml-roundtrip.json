@@ -396,5 +396,6 @@
       "state",
       "reaction"
     ]
-  }
+  },
+  { "id": "cml/atomic-number", "input": "^227_90Th", "parses": true, "cmlRoundTrip": true, "tags": ["cml", "round-trip", "atomic-number"], "since": "0.18.0" }
 ]
