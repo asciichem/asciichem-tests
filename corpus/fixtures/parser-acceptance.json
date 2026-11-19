@@ -48,5 +48,9 @@
   { "id": "reject/state-tight-charge", "input": "Ca ^2+", "parses": false, "tags": ["reject", "state", "disambiguation"], "since": "0.17.0" },
   { "id": "atomic-number/combined", "input": "^227_90Th", "parses": true, "roundTrip": true, "tags": ["isotope", "atomic-number"], "since": "0.18.0" },
   { "id": "atomic-number/legacy-underscore", "input": "_14C", "parses": true, "tags": ["isotope", "atomic-number", "disambiguation"], "since": "0.18.0" },
-  { "id": "atomic-number/suffix-precedence", "input": "^14C_6", "parses": true, "roundTrip": true, "tags": ["isotope", "atomic-number", "disambiguation"], "since": "0.18.0" }
+  { "id": "atomic-number/suffix-precedence", "input": "^14C_6", "parses": true, "roundTrip": true, "tags": ["isotope", "atomic-number", "disambiguation"], "since": "0.18.0" },
+  { "id": "adduct/hydrate", "input": "CuSO4 . 5H2O", "parses": true, "roundTrip": true, "tags": ["adduct"], "since": "0.19.0" },
+  { "id": "adduct/middle-dot-alias", "input": "CuSO4 \u00b7 5H2O", "parses": true, "roundTrip": true, "tags": ["adduct", "alias"], "since": "0.19.0" },
+  { "id": "adduct/n-ary", "input": "NaCl . KCl . CaCl2", "parses": true, "roundTrip": true, "tags": ["adduct"], "since": "0.19.0" },
+  { "id": "adduct/unspaced-dot-is-radical", "input": "Cl.Fe", "parses": true, "roundTrip": true, "tags": ["adduct", "disambiguation"], "since": "0.19.0" }
 ]
