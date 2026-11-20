@@ -14,7 +14,8 @@
         4
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "C"
   },
   {
     "id": "perception/ethanol",
@@ -33,7 +34,8 @@
         1
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "C-C-O"
   },
   {
     "id": "perception/ammonia",
@@ -50,7 +52,8 @@
         3
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "N"
   },
   {
     "id": "perception/water",
@@ -67,7 +70,8 @@
         2
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "O"
   },
   {
     "id": "perception/ammonium-stated-hydrogens",
@@ -85,7 +89,8 @@
         0
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "N^+"
   },
   {
     "id": "perception/hydroxide-charged-deferred",
@@ -103,7 +108,8 @@
         null
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "O^-"
   },
   {
     "id": "perception/cyclohexane-sp3",
@@ -126,7 +132,8 @@
         2
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "C1-C-C-C-C-C1"
   },
   {
     "id": "perception/benzene-kekule",
@@ -159,7 +166,8 @@
         ]
       ]
     },
-    "canonicalSmiles": "c1ccccc1"
+    "canonicalSmiles": "c1ccccc1",
+    "text": "C1=C-C=C-C=C1"
   },
   {
     "id": "perception/benzene-aromatic-converges",
@@ -191,7 +199,8 @@
           5
         ]
       ]
-    }
+    },
+    "text": "C1=C-C=C-C=C1"
   },
   {
     "id": "perception/pyridine",
@@ -223,7 +232,8 @@
           5
         ]
       ]
-    }
+    },
+    "text": "C1=C-C=N-C=C1"
   },
   {
     "id": "perception/naphthalene-aromatic-fused",
@@ -268,7 +278,8 @@
           8
         ]
       ]
-    }
+    },
+    "text": "C1=C-C=C2-C=C-C=C-C2=C1"
   },
   {
     "id": "perception/naphthalene-kekule-fused",
@@ -314,7 +325,8 @@
         ]
       ]
     },
-    "canonicalSmiles": "c1ccc2ccccc2c1"
+    "canonicalSmiles": "c1ccc2ccccc2c1",
+    "text": "C1=C-C=C2-C=C-C=C-C2=C1"
   },
   {
     "id": "perception/furan-aromatic-flagged",
@@ -386,7 +398,8 @@
         ]
       ]
     },
-    "canonicalSmiles": "CC(=O)Oc1ccccc1C(=O)O"
+    "canonicalSmiles": "CC(=O)Oc1ccccc1C(=O)O",
+    "text": "C-C(=O)-O-C1=C-C=C-C=C1-C(=O)-O"
   },
   {
     "id": "perception/para-quinone-not-aromatic",
@@ -411,7 +424,8 @@
         1
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "O=C1-C=C-C(=O)-C=C1"
   },
   {
     "id": "perception/furan-kekule",
@@ -443,7 +457,8 @@
           4
         ]
       ]
-    }
+    },
+    "text": "C1=C-O-C=C1"
   },
   {
     "id": "perception/pyrrole-kekule",
@@ -476,7 +491,8 @@
           4
         ]
       ]
-    }
+    },
+    "text": "C1=C-N-C=C1"
   },
   {
     "id": "perception/thiophene-kekule",
@@ -509,7 +525,8 @@
           4
         ]
       ]
-    }
+    },
+    "text": "C1=C-S-C=C1"
   },
   {
     "id": "perception/cyclopentadiene-not-aromatic",
@@ -531,7 +548,8 @@
         1
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "C1=C-C-C=C1"
   },
   {
     "id": "perception/cyclopropene-not-aromatic",
@@ -551,6 +569,7 @@
         2
       ],
       "aromaticRings": []
-    }
+    },
+    "text": "C1=C-C1"
   }
 ]

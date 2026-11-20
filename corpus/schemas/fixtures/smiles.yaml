@@ -28,6 +28,15 @@ properties:
       Deterministic writer output for this input when it differs from
       the input spelling (canonical aromatic form). Implementations
       must produce exactly this string.
+  text:
+    type: string
+    description: >-
+      The recorded canonical text for the smiles-ingested model
+      (scripts/record-smiles-text.rb: the branch-projection text —
+      branch groups instead of carbonyl ring digits — recorded when
+      the re-parsed text derives the same oracle InChI as the
+      original; present only on the identity-faithful intersection).
+      Every runtime must produce exactly this string.
   inchi:
     type: string
     description: >-
