@@ -285,8 +285,52 @@
     ],
     "since": "0.11.0"
   },
-  { "id": "format/mathml/state-precipitate", "input": "AgCl v", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>\u2193</mo>\n    </mrow>\n  </mrow>\n</math>\n" },
-  { "id": "format/mathml/state-gas", "input": "AgCl ^", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>\u2191</mo>\n    </mrow>\n  </mrow>\n</math>\n" },
-  { "id": "format/mathml/atomic-number", "input": "^227_90Th", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">Th</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <mn>90</mn>\n        <mn>227</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n" },
-  { "id": "format/mathml/adduct", "input": "CuSO4 . 5H2O", "parses": true, "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Cu</mi>\n        <mi mathvariant=\"normal\">S</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>4</mn>\n        </mrow>\n      </mrow>\n      <mo>\u00b7</mo>\n      <mrow>\n        <mn>5</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n" }
+  {
+    "id": "format/mathml/state-precipitate",
+    "input": "AgCl v",
+    "parses": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>↓</mo>\n    </mrow>\n  </mrow>\n</math>\n"
+  },
+  {
+    "id": "format/mathml/state-gas",
+    "input": "AgCl ^",
+    "parses": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mo>↑</mo>\n    </mrow>\n  </mrow>\n</math>\n"
+  },
+  {
+    "id": "format/mathml/atomic-number",
+    "input": "^227_90Th",
+    "parses": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">Th</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <mn>90</mn>\n        <mn>227</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n"
+  },
+  {
+    "id": "format/mathml/adduct",
+    "input": "CuSO4 . 5H2O",
+    "parses": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Cu</mi>\n        <mi mathvariant=\"normal\">S</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>4</mn>\n        </mrow>\n      </mrow>\n      <mo>·</mo>\n      <mrow>\n        <mn>5</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n"
+  },
+  {
+    "id": "format/mathml/donation",
+    "input": "A <=>+ B",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">A</mi>\n      </mrow>\n      <mo>⇌⁺</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">B</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "reaction",
+      "arrow"
+    ],
+    "since": "0.21.0"
+  },
+  {
+    "id": "format/mathml/removal",
+    "input": "A <=>- B",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">A</mi>\n      </mrow>\n      <mo>⇌⁻</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">B</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "reaction",
+      "arrow"
+    ],
+    "since": "0.21.0"
+  }
 ]
