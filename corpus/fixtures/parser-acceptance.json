@@ -52,5 +52,8 @@
   { "id": "adduct/hydrate", "input": "CuSO4 . 5H_2O", "parses": true, "roundTrip": true, "tags": ["adduct"], "since": "0.19.0" },
   { "id": "adduct/middle-dot-alias", "input": "CuSO4 \u00b7 5H2O", "parses": true, "tags": ["adduct", "alias"], "since": "0.19.0" },
   { "id": "adduct/n-ary", "input": "NaCl . KCl . CaCl2", "parses": true, "roundTrip": true, "tags": ["adduct"], "since": "0.19.0" },
-  { "id": "adduct/unspaced-dot-is-radical", "input": "Cl.Fe", "parses": true, "roundTrip": true, "tags": ["adduct", "disambiguation"], "since": "0.19.0" }
+  { "id": "adduct/unspaced-dot-is-radical", "input": "Cl.Fe", "parses": true, "roundTrip": true, "tags": ["adduct", "disambiguation"], "since": "0.19.0" },
+  { "id": "reaction/donation", "input": "A <=>+ B", "parses": true, "roundTrip": true, "tags": ["reaction", "arrow"], "since": "0.21.0" },
+  { "id": "reaction/removal", "input": "A <=>- B", "parses": true, "roundTrip": true, "tags": ["reaction", "arrow"], "since": "0.21.0" },
+  { "id": "reaction/donation-conditions", "input": "A <=>+[Fe] B", "parses": true, "roundTrip": true, "tags": ["reaction", "arrow"], "since": "0.21.0" }
 ]
