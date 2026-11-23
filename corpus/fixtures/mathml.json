@@ -332,5 +332,28 @@
       "arrow"
     ],
     "since": "0.21.0"
+  },
+  {
+    "id": "format/mathml/phase",
+    "input": "NaCl(aq)",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Na</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mtext>(aq)</mtext>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "phase"
+    ],
+    "since": "0.22.0"
+  },
+  {
+    "id": "format/mathml/phase-state",
+    "input": "AgCl(s) v",
+    "parses": true,
+    "roundTrip": true,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n      <mtext>(s)</mtext>\n      <mo>↓</mo>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "phase",
+      "state"
+    ],
+    "since": "0.22.0"
   }
 ]

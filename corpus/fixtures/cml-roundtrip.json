@@ -444,5 +444,17 @@
       "reaction"
     ],
     "since": "0.21.0"
+  },
+  {
+    "id": "cml/molecule-phase",
+    "input": "NaCl(aq)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "tags": [
+      "cml",
+      "round-trip",
+      "phase"
+    ],
+    "since": "0.22.0"
   }
 ]
