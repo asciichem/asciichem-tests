@@ -119,5 +119,291 @@
       "render-golden"
     ],
     "since": "0.23.0"
+  },
+  {
+    "id": "latex/atom/element",
+    "input": "H",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{H}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atom/two-letter-element",
+    "input": "He",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{He}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atom/isotope-prefix",
+    "input": "^14C",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{^14C}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atom/charge-suffix",
+    "input": "Ca^2+",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Ca^{2+}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atom/anion",
+    "input": "Cl^-",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Cl^{-}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atom/oxidation-state",
+    "input": "Ca^(II)",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Ca^{(II)}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/molecule/subscript",
+    "input": "H_2O",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{H2O}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/molecule/group-multiplicity",
+    "input": "(OH)_2",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{(OH)2}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/molecule/square-bracket-group",
+    "input": "[OH]_2",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{[OH]2}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/molecule/linear-bonds",
+    "input": "H-O-H",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{H-O-H}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/molecule/triple-bond",
+    "input": "HC#CH",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{HC\\\\equiv{}CH}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/reaction/balanced-synthesis",
+    "input": "2H_2 + O_2 -> 2H_2O",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{2H2 + O2 -> 2H2O}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/electron-configuration/p",
+    "input": "1s^2 2s^2 2p^6 3d^10 4s^2",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{\\ce{1s^2 2s^2 2p^6 3d^10 4s^2}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/embedded-math",
+    "input": "`K_c = 1`",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{$K_{c} = 1$}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/free-text",
+    "input": "\"free text\"",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{free text}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/lewis/lone-pairs",
+    "input": "::O",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{::O}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/state/gas",
+    "input": "AgCl ^",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{AgCl\\uparrow}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/state/in-reaction",
+    "input": "Ag^+ + Cl^- -> AgCl v",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Ag^{+} + Cl^{-} -> AgCl\\downarrow}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/state/cascade",
+    "input": "CaCO_3 ->[heat] CaO + CO_2 ^",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{CaCO3 ->[heat] CaO + CO2\\uparrow}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/state/not-vanadium",
+    "input": "AgCl V",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{AgClV}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/state/tight-forms-unchanged",
+    "input": "Ca^2+ v",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Ca^{2+}\\downarrow}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atomic-number/combined",
+    "input": "^227_90Th",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{^227_90Th}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/atomic-number/suffix-precedence",
+    "input": "^14C_6",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{^14C6}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/adduct/n-ary",
+    "input": "NaCl . KCl . CaCl2",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{NaCl\\cdot KCl\\cdot CaCl2}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/adduct/unspaced-dot-is-radical",
+    "input": "Cl.Fe",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Cl.Fe}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "latex/phase/capital-group-not-phase",
+    "input": "Fe(S)",
+    "parses": true,
+    "roundTrip": false,
+    "latex": "\\ce{Fe(S)}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
   }
 ]
