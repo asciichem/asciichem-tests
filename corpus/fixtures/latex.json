@@ -1,0 +1,123 @@
+[
+  {
+    "id": "latex/reaction/donation",
+    "input": "A <=>+ B",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{A <=>+ B}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/reaction/removal",
+    "input": "A <=>- B",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{A <=>- B}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/reaction/donation-conditions",
+    "input": "A <=>+[Fe] B",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{A <=>+[Fe] B}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/phase/aqueous",
+    "input": "NaCl(aq)",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{NaCl\\text{(aq)}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/phase/liquid",
+    "input": "H_2O(l)",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{H2O\\text{(l)}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/phase/solid",
+    "input": "Fe(s)",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{Fe\\text{(s)}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/phase/gas",
+    "input": "CO_2(g)",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{CO2\\text{(g)}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/phase/with-state-mark",
+    "input": "AgCl(s) v",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{AgCl\\text{(s)}\\downarrow}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/phase/after-group",
+    "input": "Ca(OH)_2(aq)",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{Ca(OH)2\\text{(aq)}}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/state/precipitate",
+    "input": "AgCl v",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{AgCl\\downarrow}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "latex/adduct/hydrate",
+    "input": "CuSO4 . 5H2O",
+    "parses": true,
+    "roundTrip": true,
+    "latex": "\\ce{CuSO4\\cdot 5H2O}",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  }
+]
