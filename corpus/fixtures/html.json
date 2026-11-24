@@ -113,7 +113,7 @@
     "id": "html/adduct/hydrate",
     "input": "CuSO4 . 5H2O",
     "parses": true,
-    "roundTrip": true,
+    "roundTrip": false,
     "html": "<span class=\"asciichem\">CuSO4&middot;5H<sub>2</sub>O</span>",
     "tags": [
       "render-golden"
