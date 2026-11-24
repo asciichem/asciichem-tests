@@ -1,0 +1,123 @@
+[
+  {
+    "id": "html/reaction/donation",
+    "input": "A <=>+ B",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">A ⇌⁺ B</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/reaction/removal",
+    "input": "A <=>- B",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">A ⇌⁻ B</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/reaction/donation-conditions",
+    "input": "A <=>+[Fe] B",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">A <sup>Fe</sup>⇌⁺ B</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/phase/aqueous",
+    "input": "NaCl(aq)",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">NaCl(aq)</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/phase/liquid",
+    "input": "H_2O(l)",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">H<sub>2</sub>O(l)</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/phase/solid",
+    "input": "Fe(s)",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">Fe(s)</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/phase/gas",
+    "input": "CO_2(g)",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">CO<sub>2</sub>(g)</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/phase/with-state-mark",
+    "input": "AgCl(s) v",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">AgCl(s)&darr;</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/phase/after-group",
+    "input": "Ca(OH)_2(aq)",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">Ca(OH)<sub>2</sub>(aq)</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/state/precipitate",
+    "input": "AgCl v",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">AgCl&darr;</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  },
+  {
+    "id": "html/adduct/hydrate",
+    "input": "CuSO4 . 5H2O",
+    "parses": true,
+    "roundTrip": true,
+    "html": "<span class=\"asciichem\">CuSO4&middot;5H<sub>2</sub>O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.23.0"
+  }
+]
