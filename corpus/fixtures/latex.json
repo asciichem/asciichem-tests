@@ -113,7 +113,7 @@
     "id": "latex/adduct/hydrate",
     "input": "CuSO4 . 5H2O",
     "parses": true,
-    "roundTrip": true,
+    "roundTrip": false,
     "latex": "\\ce{CuSO4\\cdot 5H2O}",
     "tags": [
       "render-golden"
