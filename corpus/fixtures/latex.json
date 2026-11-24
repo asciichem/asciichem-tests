@@ -235,7 +235,7 @@
     "input": "HC#CH",
     "parses": true,
     "roundTrip": false,
-    "latex": "\\ce{HC\\\\equiv{}CH}",
+    "latex": "\\ce{HC\\equiv{}CH}",
     "tags": [
       "render-golden"
     ],
@@ -272,7 +272,8 @@
     "tags": [
       "render-golden"
     ],
-    "since": "0.24.0"
+    "since": "0.24.0",
+    "referenceRender": true
   },
   {
     "id": "latex/free-text",

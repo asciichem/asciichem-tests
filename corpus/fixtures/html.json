@@ -272,7 +272,8 @@
     "tags": [
       "render-golden"
     ],
-    "since": "0.24.0"
+    "since": "0.24.0",
+    "referenceRender": true
   },
   {
     "id": "html/free-text",
