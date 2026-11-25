@@ -456,5 +456,161 @@
       "phase"
     ],
     "since": "0.22.0"
+  },
+  {
+    "id": "cml/atom/element",
+    "input": "H",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/atom/two-letter-element",
+    "input": "He",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/atom/anion",
+    "input": "Cl^-",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/atom/oxidation-state",
+    "input": "Ca^(II)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/molecule/triple-bond",
+    "input": "HC#CH",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/embedded-math",
+    "input": "`K_c = 1`",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/free-text",
+    "input": "\"free text\"",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/state/in-reaction",
+    "input": "Ag^+ + Cl^- -> AgCl v",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/state/not-vanadium",
+    "input": "AgCl V",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/state/tight-forms-unchanged",
+    "input": "Ca^2+ v",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/atomic-number/legacy-underscore",
+    "input": "_14C",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0",
+    "text": "^14C"
+  },
+  {
+    "id": "cml/atomic-number/suffix-precedence",
+    "input": "^14C_6",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/adduct/middle-dot-alias",
+    "input": "CuSO4 · 5H2O",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0",
+    "text": "CuSO4 . 5H_2O"
+  },
+  {
+    "id": "cml/adduct/n-ary",
+    "input": "NaCl . KCl . CaCl2",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/adduct/unspaced-dot-is-radical",
+    "input": "Cl.Fe",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/reaction/donation-conditions",
+    "input": "A <=>+[Fe] B",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/phase/liquid",
+    "input": "H_2O(l)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/phase/solid",
+    "input": "Fe(s)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/phase/gas",
+    "input": "CO_2(g)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/phase/after-group",
+    "input": "Ca(OH)_2(aq)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/phase/with-state-mark",
+    "input": "AgCl(s) v",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
+  },
+  {
+    "id": "cml/phase/capital-group-not-phase",
+    "input": "Fe(S)",
+    "parses": true,
+    "cmlRoundTrip": true,
+    "since": "0.26.0"
   }
 ]
