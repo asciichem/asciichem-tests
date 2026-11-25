@@ -119,5 +119,292 @@
       "render-golden"
     ],
     "since": "0.23.0"
+  },
+  {
+    "id": "html/atom/element",
+    "input": "H",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">H</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atom/two-letter-element",
+    "input": "He",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">He</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atom/isotope-prefix",
+    "input": "^14C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\"><sup>14</sup>C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atom/charge-suffix",
+    "input": "Ca^2+",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Ca<sup>2+</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atom/anion",
+    "input": "Cl^-",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Cl<sup>-</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atom/oxidation-state",
+    "input": "Ca^(II)",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Ca<sup>(II)</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/molecule/subscript",
+    "input": "H_2O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">H<sub>2</sub>O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/molecule/group-multiplicity",
+    "input": "(OH)_2",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">(OH)<sub>2</sub></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/molecule/square-bracket-group",
+    "input": "[OH]_2",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">[OH]<sub>2</sub></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/molecule/linear-bonds",
+    "input": "H-O-H",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">H-O-H</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/molecule/triple-bond",
+    "input": "HC#CH",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">HC#CH</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/reaction/balanced-synthesis",
+    "input": "2H_2 + O_2 -> 2H_2O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">2H<sub>2</sub> + O<sub>2</sub> → 2H<sub>2</sub>O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/electron-configuration/p",
+    "input": "1s^2 2s^2 2p^6 3d^10 4s^2",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3d<sup>10</sup> 4s<sup>2</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/embedded-math",
+    "input": "`K_c = 1`",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\">\n  <mstyle displaystyle=\"true\">\n    <msub>\n      <mi>K</mi>\n      <mi>c</mi>\n    </msub>\n    <mo>=</mo>\n    <mn>1</mn>\n  </mstyle>\n</math>\n</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0",
+    "referenceRender": true
+  },
+  {
+    "id": "html/free-text",
+    "input": "\"free text\"",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">free text</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/lewis/lone-pairs",
+    "input": "::O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/state/gas",
+    "input": "AgCl ^",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">AgCl&uarr;</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/state/in-reaction",
+    "input": "Ag^+ + Cl^- -> AgCl v",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Ag<sup>+</sup> + Cl<sup>-</sup> → AgCl&darr;</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/state/cascade",
+    "input": "CaCO_3 ->[heat] CaO + CO_2 ^",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">CaCO<sub>3</sub> <sup>heat</sup>→ CaO + CO<sub>2</sub>&uarr;</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/state/not-vanadium",
+    "input": "AgCl V",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">AgClV</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/state/tight-forms-unchanged",
+    "input": "Ca^2+ v",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Ca<sup>2+</sup>&darr;</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atomic-number/combined",
+    "input": "^227_90Th",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\"><sup>227</sup><sub>90</sub>Th</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/atomic-number/suffix-precedence",
+    "input": "^14C_6",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\"><sup>14</sup>C<sub>6</sub></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/adduct/n-ary",
+    "input": "NaCl . KCl . CaCl2",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">NaCl&middot;KCl&middot;CaCl2</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/adduct/unspaced-dot-is-radical",
+    "input": "Cl.Fe",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">ClFe</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
+  },
+  {
+    "id": "html/phase/capital-group-not-phase",
+    "input": "Fe(S)",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Fe(S)</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.24.0"
   }
 ]

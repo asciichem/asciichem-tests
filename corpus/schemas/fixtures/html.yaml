@@ -21,6 +21,13 @@ properties:
     type: boolean
   roundTrip:
     type: boolean
+  referenceRender:
+    type: boolean
+    description: >
+      The golden embeds the reference implementation's math-engine
+      output (Plurimath). Implementations without an embedded math
+      engine skip the row; the skip is the documented degradation,
+      not a silent drop. The reference itself still gates on it.
   html:
     type: string
     description: byte-exact golden; implementations compare as strings.

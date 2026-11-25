@@ -62,7 +62,13 @@ One case or group per file:
   https://github.com/asciichem/asciichem-model[asciichem-model]
   schemas) once the gem emits it (TODO.impl/37); parsers compare by
   semantic equality.
-- `renders` — golden strings per format.
+- `renders` — golden strings per format. The `html`/`latex` families
+  (0.24.0) carry a reference golden for every canonical construct.
+- `referenceRender` — `true` on golden rows whose output embeds the
+  reference's math-engine result (Plurimath; e.g. the embedded-math
+  rows). Implementations without an embedded math engine skip such
+  rows; the skip is the documented degradation, not a silent drop.
+  The reference itself still gates on them.
 - `roundTrip` — `parse(input).toText == input` must hold.
 - Identifier fixtures use `convention`/`value`/`valid` triples
   (format-level only; assignment checking is resolution, not
