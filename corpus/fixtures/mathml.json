@@ -355,5 +355,314 @@
       "state"
     ],
     "since": "0.22.0"
+  },
+  {
+    "id": "format/mathml/atom/element",
+    "input": "H",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">H</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/atom/two-letter-element",
+    "input": "He",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">He</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/atom/charge-suffix",
+    "input": "Ca^2+",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Ca</mi>\n        <mrow>\n          <mn>2</mn>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/atom/anion",
+    "input": "Cl^-",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Cl</mi>\n        <mrow>\n          <mo>-</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/atom/oxidation-state",
+    "input": "Ca^(II)",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Ca</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">II</mi>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/molecule/square-bracket-group",
+    "input": "[OH]_2",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub>\n        <mrow>\n          <mo>[</mo>\n          <mrow>\n            <mi mathvariant=\"normal\">O</mi>\n            <mi mathvariant=\"normal\">H</mi>\n          </mrow>\n          <mo>]</mo>\n        </mrow>\n        <mn>2</mn>\n      </msub>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/molecule/triple-bond",
+    "input": "HC#CH",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">H</mi>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>≡</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mi mathvariant=\"normal\">H</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/reaction/balanced-synthesis",
+    "input": "2H_2 + O_2 -> 2H_2O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mn>2</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>2</mn>\n        </msub>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mn>2</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/electron-configuration/p",
+    "input": "1s^2 2s^2 2p^6 3d^10 4s^2",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">1s</mi>\n        <mn>2</mn>\n      </msup>\n      <mo> </mo>\n      <msup>\n        <mi mathvariant=\"normal\">2s</mi>\n        <mn>2</mn>\n      </msup>\n      <mo> </mo>\n      <msup>\n        <mi mathvariant=\"normal\">2p</mi>\n        <mn>6</mn>\n      </msup>\n      <mo> </mo>\n      <msup>\n        <mi mathvariant=\"normal\">3d</mi>\n        <mn>10</mn>\n      </msup>\n      <mo> </mo>\n      <msup>\n        <mi mathvariant=\"normal\">4s</mi>\n        <mn>2</mn>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/embedded-math",
+    "input": "`K_c = 1`",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mstyle xmlns=\"http://www.w3.org/1998/Math/MathML\" displaystyle=\"true\">\n        <msub>\n          <mi>K</mi>\n          <mi>c</mi>\n        </msub>\n        <mo>=</mo>\n        <mn>1</mn>\n      </mstyle>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0",
+    "referenceRender": true
+  },
+  {
+    "id": "format/mathml/free-text",
+    "input": "\"free text\"",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mtext>free text</mtext>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/lewis/lone-pairs",
+    "input": "::O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mtext>::</mtext>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/state/in-reaction",
+    "input": "Ag^+ + Cl^- -> AgCl v",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <msup>\n          <mi mathvariant=\"normal\">Ag</mi>\n          <mrow>\n            <mo>+</mo>\n          </mrow>\n        </msup>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <msup>\n          <mi mathvariant=\"normal\">Cl</mi>\n          <mrow>\n            <mo>-</mo>\n          </mrow>\n        </msup>\n      </mrow>\n      <mo>→</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">Ag</mi>\n        <mi mathvariant=\"normal\">Cl</mi>\n        <mo>↓</mo>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/state/cascade",
+    "input": "CaCO_3 ->[heat] CaO + CO_2 ^",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Ca</mi>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>3</mn>\n        </msub>\n      </mrow>\n      <mover>\n        <mo>→</mo>\n        <mtext>heat</mtext>\n      </mover>\n      <mrow>\n        <mi mathvariant=\"normal\">Ca</mi>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n      <mo>+</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <msub>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>2</mn>\n        </msub>\n        <mo>↑</mo>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/state/not-vanadium",
+    "input": "AgCl V",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ag</mi>\n      <mi mathvariant=\"normal\">Cl</mi>\n    </mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">V</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/state/tight-forms-unchanged",
+    "input": "Ca^2+ v",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Ca</mi>\n        <mrow>\n          <mn>2</mn>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n      <mo>↓</mo>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/atomic-number/legacy-underscore",
+    "input": "_14C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">C</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <none/>\n        <mn>14</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/atomic-number/suffix-precedence",
+    "input": "^14C_6",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub>\n        <mmultiscripts>\n          <mi mathvariant=\"normal\">C</mi>\n          <none/>\n          <none/>\n          <mprescripts/>\n          <none/>\n          <mn>14</mn>\n        </mmultiscripts>\n        <mn>6</mn>\n      </msub>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/adduct/hydrate",
+    "input": "CuSO4 . 5H_2O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Cu</mi>\n        <mi mathvariant=\"normal\">S</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>4</mn>\n        </mrow>\n      </mrow>\n      <mo>·</mo>\n      <mrow>\n        <mn>5</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/adduct/middle-dot-alias",
+    "input": "CuSO4 · 5H2O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Cu</mi>\n        <mi mathvariant=\"normal\">S</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">O</mi>\n          <mn>4</mn>\n        </mrow>\n      </mrow>\n      <mo>·</mo>\n      <mrow>\n        <mn>5</mn>\n        <msub>\n          <mi mathvariant=\"normal\">H</mi>\n          <mn>2</mn>\n        </msub>\n        <mi mathvariant=\"normal\">O</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/adduct/n-ary",
+    "input": "NaCl . KCl . CaCl2",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Na</mi>\n        <mi mathvariant=\"normal\">Cl</mi>\n      </mrow>\n      <mo>·</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">K</mi>\n        <mi mathvariant=\"normal\">Cl</mi>\n      </mrow>\n      <mo>·</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">Ca</mi>\n        <mrow>\n          <mi mathvariant=\"normal\">Cl</mi>\n          <mn>2</mn>\n        </mrow>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/adduct/unspaced-dot-is-radical",
+    "input": "Cl.Fe",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">Cl</mi>\n        <mtext>.</mtext>\n      </mrow>\n      <mi mathvariant=\"normal\">Fe</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/reaction/donation-conditions",
+    "input": "A <=>+[Fe] B",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">A</mi>\n      </mrow>\n      <mover>\n        <mo>⇌⁺</mo>\n        <mrow>\n          <mrow>\n            <mi mathvariant=\"normal\">Fe</mi>\n          </mrow>\n        </mrow>\n      </mover>\n      <mrow>\n        <mi mathvariant=\"normal\">B</mi>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/phase/liquid",
+    "input": "H_2O(l)",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub>\n        <mi mathvariant=\"normal\">H</mi>\n        <mn>2</mn>\n      </msub>\n      <mi mathvariant=\"normal\">O</mi>\n      <mtext>(l)</mtext>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/phase/solid",
+    "input": "Fe(s)",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Fe</mi>\n      <mtext>(s)</mtext>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/phase/gas",
+    "input": "CO_2(g)",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <msub>\n        <mi mathvariant=\"normal\">O</mi>\n        <mn>2</mn>\n      </msub>\n      <mtext>(g)</mtext>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/phase/after-group",
+    "input": "Ca(OH)_2(aq)",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Ca</mi>\n      <msub>\n        <mrow>\n          <mo>(</mo>\n          <mrow>\n            <mi mathvariant=\"normal\">O</mi>\n            <mi mathvariant=\"normal\">H</mi>\n          </mrow>\n          <mo>)</mo>\n        </mrow>\n        <mn>2</mn>\n      </msub>\n      <mtext>(aq)</mtext>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
+  },
+  {
+    "id": "format/mathml/phase/capital-group-not-phase",
+    "input": "Fe(S)",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">Fe</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mi mathvariant=\"normal\">S</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.25.0"
   }
 ]
