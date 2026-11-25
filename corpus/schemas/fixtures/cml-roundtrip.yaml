@@ -21,6 +21,13 @@ properties:
     type: boolean
   cmlRoundTrip:
     type: boolean
+  text:
+    type: string
+    description: >-
+      The canonical text the three-way round trip lands on when the
+      input is a non-canonical alias spelling (the model is
+      preserved; the Text formatter's canonical form differs from
+      the alias input). Defaults to the input when absent.
   pending:
     type: array
     items: { type: string }
