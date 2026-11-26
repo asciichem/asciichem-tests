@@ -406,5 +406,357 @@
       "render-golden"
     ],
     "since": "0.24.0"
+  },
+  {
+    "id": "html/structure/smiles/ethanol",
+    "input": "C-C-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/propane",
+    "input": "C-C-C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/isopropanol",
+    "input": "C-C(-O)-C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C(-O)-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/tert-butanol",
+    "input": "C-C(-C)(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C(-C)(-C)-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/neopentane",
+    "input": "C(-C)(-C)(-C)(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C(-C)(-C)(-C)(-C)-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/benzene-aromatic",
+    "input": "C1=C-C=C-C=C1",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1=C-C=C-C=C1</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/benzene-kekule",
+    "input": "C1=C-C=C-C=C1",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1=C-C=C-C=C1</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/naphthalene",
+    "input": "C1=C-C=C2-C=C-C=C-C2=C1",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1=C-C=C2-C=C-C=C-C2=C1</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/aspirin",
+    "input": "C-C(=O)-O-C1=C-C=C-C=C1-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C(=O)-O-C1=C-C=C-C=C1-C(=O)-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/phenol",
+    "input": "C1=C-C=C-C=C1-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1=C-C=C-C=C1-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/biphenyl",
+    "input": "C1=C-C=C-C=C1-C1=C-C=C-C=C1",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1=C-C=C-C=C1-C1=C-C=C-C=C1</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/nitrogen",
+    "input": "N#N",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">N#N</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/acetic-acid",
+    "input": "C-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C(=O)-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/water",
+    "input": "O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ammonium",
+    "input": "N^+",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">N<sup>+</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/hydroxide",
+    "input": "O^-",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">O<sup>-</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ferric",
+    "input": "Fe^3+",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Fe<sup>3+</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ferric-plusplus",
+    "input": "Fe^2+",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Fe<sup>2+</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/methane-d4",
+    "input": "^2H-C(-^2H)(-^2H)-^2H",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\"><sup>2</sup>H-C(-<sup>2</sup>H)(-<sup>2</sup>H)-<sup>2</sup>H</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/c14",
+    "input": "^13C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\"><sup>13</sup>C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/decahedrane-loop",
+    "input": "C1-C-C-C-C-C-C-C-C-C-C1",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1-C-C-C-C-C-C-C-C-C-C1</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/mixture",
+    "input": "O C-C-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">OC-C-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/explicit-bond",
+    "input": "C-C-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/chirality",
+    "input": "C@TH1(-O)(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C(-O)(-C)-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/chirality-double",
+    "input": "C@TH2(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C(-C)-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ez-direction",
+    "input": "C/C=C/C",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C=C-C</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/isopropanol-bracketed",
+    "input": "C-C(-C)-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C-C(-C)-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ferric-plusplus-alt",
+    "input": "Fe^2+",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">Fe<sup>2+</sup></span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/chirality-enantiomer-pair",
+    "input": "N-C@TH2(-C)-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">N-C(-C)-C(=O)-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/chirality-enantiomer-pair-2",
+    "input": "N-C@TH1(-C)-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">N-C(-C)-C(=O)-O</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ez-isomer-2",
+    "input": "F/C=C\\F",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">F-C=C-F</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "html/structure/smiles/ring-closure-branch",
+    "input": "C1=C-C-C(-C)-C(-C)-C1",
+    "parses": true,
+    "roundTrip": false,
+    "html": "<span class=\"asciichem\">C1=C-C-C(-C)-C(-C)-C1</span>",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
   }
 ]
