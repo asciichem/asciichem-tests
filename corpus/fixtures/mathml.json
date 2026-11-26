@@ -460,7 +460,7 @@
     "input": "`K_c = 1`",
     "parses": true,
     "roundTrip": false,
-    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mstyle xmlns=\"http://www.w3.org/1998/Math/MathML\" displaystyle=\"true\">\n        <msub>\n          <mi>K</mi>\n          <mi>c</mi>\n        </msub>\n        <mo>=</mo>\n        <mn>1</mn>\n      </mstyle>\n    </mrow>\n  </mrow>\n</math>\n",
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msub xmlns=\"http://www.w3.org/1998/Math/MathML\">\n        <mi>K</mi>\n        <mi>c</mi>\n      </msub>\n      <mo xmlns=\"http://www.w3.org/1998/Math/MathML\">=</mo>\n      <mn xmlns=\"http://www.w3.org/1998/Math/MathML\">1</mn>\n    </mrow>\n  </mrow>\n</math>\n",
     "tags": [
       "render-golden"
     ],
