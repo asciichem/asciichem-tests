@@ -268,7 +268,7 @@
     "input": "`K_c = 1`",
     "parses": true,
     "roundTrip": false,
-    "html": "<span class=\"asciichem\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\">\n  <mstyle displaystyle=\"true\">\n    <msub>\n      <mi>K</mi>\n      <mi>c</mi>\n    </msub>\n    <mo>=</mo>\n    <mn>1</mn>\n  </mstyle>\n</math>\n</span>",
+    "html": "<span class=\"asciichem\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" displaystyle=\"true\">\n  <msub>\n    <mi>K</mi>\n    <mi>c</mi>\n  </msub>\n  <mo>=</mo>\n  <mn>1</mn>\n</math>\n</span>",
     "tags": [
       "render-golden"
     ],
