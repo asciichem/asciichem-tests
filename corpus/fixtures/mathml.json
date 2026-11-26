@@ -664,5 +664,357 @@
       "render-golden"
     ],
     "since": "0.25.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ethanol",
+    "input": "C-C-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/propane",
+    "input": "C-C-C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/isopropanol",
+    "input": "C-C(-O)-C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/tert-butanol",
+    "input": "C-C(-C)(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/neopentane",
+    "input": "C(-C)(-C)(-C)(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/benzene-aromatic",
+    "input": "C1=C-C=C-C=C1",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/benzene-kekule",
+    "input": "C1=C-C=C-C=C1",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/naphthalene",
+    "input": "C1=C-C=C2-C=C-C=C-C2=C1",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>2</mn>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>2</mn>\n      </mrow>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/aspirin",
+    "input": "C-C(=O)-O-C1=C-C=C-C=C1-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>=</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n      <mo>-</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>=</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/phenol",
+    "input": "C1=C-C=C-C=C1-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/biphenyl",
+    "input": "C1=C-C=C-C=C1-C1=C-C=C-C=C1",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>-</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/nitrogen",
+    "input": "N#N",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">N</mi>\n      <mo>≡</mo>\n      <mi mathvariant=\"normal\">N</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/acetic-acid",
+    "input": "C-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>=</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/water",
+    "input": "O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ammonium",
+    "input": "N^+",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">N</mi>\n        <mrow>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/hydroxide",
+    "input": "O^-",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">O</mi>\n        <mrow>\n          <mo>-</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ferric",
+    "input": "Fe^3+",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Fe</mi>\n        <mrow>\n          <mn>3</mn>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ferric-plusplus",
+    "input": "Fe^2+",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Fe</mi>\n        <mrow>\n          <mn>2</mn>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/methane-d4",
+    "input": "^2H-C(-^2H)(-^2H)-^2H",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">H</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <none/>\n        <mn>2</mn>\n      </mmultiscripts>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mmultiscripts>\n            <mi mathvariant=\"normal\">H</mi>\n            <none/>\n            <none/>\n            <mprescripts/>\n            <none/>\n            <mn>2</mn>\n          </mmultiscripts>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mmultiscripts>\n            <mi mathvariant=\"normal\">H</mi>\n            <none/>\n            <none/>\n            <mprescripts/>\n            <none/>\n            <mn>2</mn>\n          </mmultiscripts>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">H</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <none/>\n        <mn>2</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/c14",
+    "input": "^13C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mmultiscripts>\n        <mi mathvariant=\"normal\">C</mi>\n        <none/>\n        <none/>\n        <mprescripts/>\n        <none/>\n        <mn>13</mn>\n      </mmultiscripts>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/decahedrane-loop",
+    "input": "C1-C-C-C-C-C-C-C-C-C-C1",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/mixture",
+    "input": "O C-C-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/explicit-bond",
+    "input": "C-C-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/chirality",
+    "input": "C@TH1(-O)(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/chirality-double",
+    "input": "C@TH2(-C)-C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ez-direction",
+    "input": "C/C=C/C",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/isopropanol-bracketed",
+    "input": "C-C(-C)-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ferric-plusplus-alt",
+    "input": "Fe^2+",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <msup>\n        <mi mathvariant=\"normal\">Fe</mi>\n        <mrow>\n          <mn>2</mn>\n          <mo>+</mo>\n        </mrow>\n      </msup>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/chirality-enantiomer-pair",
+    "input": "N-C@TH2(-C)-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">N</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>=</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/chirality-enantiomer-pair-2",
+    "input": "N-C@TH1(-C)-C(=O)-O",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">N</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>=</mo>\n          <mi mathvariant=\"normal\">O</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">O</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ez-isomer-2",
+    "input": "F/C=C\\F",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mi mathvariant=\"normal\">F</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">F</mi>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
+  },
+  {
+    "id": "mathml/structure/smiles/ring-closure-branch",
+    "input": "C1=C-C-C(-C)-C(-C)-C1",
+    "parses": true,
+    "roundTrip": false,
+    "mathml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n  <mrow>\n    <mrow>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n      <mo>=</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mi mathvariant=\"normal\">C</mi>\n      <mrow>\n        <mo>(</mo>\n        <mrow>\n          <mo>-</mo>\n          <mi mathvariant=\"normal\">C</mi>\n        </mrow>\n        <mo>)</mo>\n      </mrow>\n      <mo>-</mo>\n      <mrow>\n        <mi mathvariant=\"normal\">C</mi>\n        <mn>1</mn>\n      </mrow>\n    </mrow>\n  </mrow>\n</math>\n",
+    "tags": [
+      "render-golden"
+    ],
+    "since": "0.28.0"
   }
 ]
