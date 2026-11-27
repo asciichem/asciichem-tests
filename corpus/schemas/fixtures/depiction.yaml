@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://json-schema.org/draft-2020-12/schema
+# Depiction cases (the structural-SVG golden rows, asciichem-rs#82).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/depiction
+title: AsciiChem depiction fixture
+type: object
+required: [id, input, parses, smiles, svg]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+    description: the standalone reference text (`@smiles("...")`).
+  parses:
+    type: boolean
+  smiles:
+    type: string
+    description: the referenced structure's source SMILES.
+  svg:
+    type: string
+    description: >-
+      the structural SVG golden recorded from the reference render
+      (scripts/record-depiction.mjs; the TS implementation is the
+      structural-SVG authority). Implementations with the shared
+      layout contract re-render exactly these bytes; the enantiomer
+      pairs are the wedge-synthesis acceptance — a runtime's drawn
+      polarity gates in asciichem-rs's stereo_depiction oracle test
+      through the chemomer engine.
