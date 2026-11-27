@@ -337,7 +337,8 @@
       "perception",
       "aromatic",
       "five-membered",
-      "flagged"
+      "flagged",
+      "donation"
     ],
     "since": "0.31.2",
     "perception": {
@@ -345,7 +346,7 @@
         1,
         1,
         1,
-        null,
+        0,
         1
       ],
       "aromaticRings": [
@@ -571,5 +572,218 @@
       "aromaticRings": []
     },
     "text": "C1=C-C1"
+  },
+  {
+    "id": "perception/pyrrole-auto-h",
+    "smiles": "c1ccnc1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "donation"
+    ],
+    "since": "0.29.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "text": "C1:C:C:N:C1",
+    "canonicalSmiles": "c1ccnc1"
+  },
+  {
+    "id": "perception/pyrrole-nh",
+    "smiles": "c1cc[nH]c1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "donation"
+    ],
+    "since": "0.29.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "text": "C1:C:C:N:C1",
+    "canonicalSmiles": "c1cc[nH]c1"
+  },
+  {
+    "id": "perception/thiophene",
+    "smiles": "c1ccsc1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "donation"
+    ],
+    "since": "0.29.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "text": "C1:C:C:S:C1",
+    "canonicalSmiles": "c1ccsc1"
+  },
+  {
+    "id": "perception/imidazole",
+    "smiles": "c1c[nH]cn1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "donation"
+    ],
+    "since": "0.29.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "text": "C1:C:N:C:N1",
+    "canonicalSmiles": "c1c[nH]cn1"
+  },
+  {
+    "id": "perception/oxazole",
+    "smiles": "c1cnoc1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "donation"
+    ],
+    "since": "0.29.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "text": "C1:C:N:O:C1",
+    "canonicalSmiles": "c1cnoc1"
+  },
+  {
+    "id": "perception/indole",
+    "smiles": "c1ccc2[nH]cccc2c1",
+    "parses": true,
+    "smilesRoundTrip": true,
+    "tags": [
+      "perception",
+      "aromatic",
+      "five-membered",
+      "fused",
+      "donation"
+    ],
+    "since": "0.29.0",
+    "perception": {
+      "implicitHydrogens": [
+        1,
+        1,
+        1,
+        null,
+        0,
+        1,
+        1,
+        1,
+        null,
+        1
+      ],
+      "aromaticRings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ]
+    },
+    "text": "C1=C-C=C2-N=C-C=C-C2=C1",
+    "canonicalSmiles": "c1ccc2[nH]cccc2c1"
   }
 ]
