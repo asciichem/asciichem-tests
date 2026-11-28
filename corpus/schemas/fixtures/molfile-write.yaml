@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://json-schema.org/draft-2020-12/schema
+# Molfile-write cases (the cross-runtime writer contract, asciichem-rs#86).
+---
+$id: https://github.com/asciichem/asciichem-tests/v1/fixtures/molfile-write
+title: AsciiChem molfile-write fixture
+type: object
+required: [id, input, parses, smiles, writtenMolfile]
+additionalProperties: false
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9][a-z0-9/-]*$"
+  tags:
+    type: array
+    items: { type: string }
+  since:
+    type: string
+  input:
+    type: string
+    description: the standalone reference text (`@smiles("...")`).
+  parses:
+    type: boolean
+  smiles:
+    type: string
+    description: the referenced structure's source SMILES.
+  writtenMolfile:
+    type: string
+    description: >-
+      the V2000 molfile the reference writer emits (laid, geometry-aware
+      claims semantic; scripts/record-molfile-write.mjs drives the
+      converged ts dist, byte-verified against the rs writer on this
+      battery). The enantiomer pairs are the identity-facing acceptance —
+      a runtime whose written hand reads as the mirror enantiomer fails
+      its own identity battery. Ruby's identity seam is the unlaid
+      contract and reports these rows as a visible skip.
